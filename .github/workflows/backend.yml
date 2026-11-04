@@ -21,28 +21,28 @@ jobs:
           python-version: "3.14"
 
       - name: Install dependencies
-        working-directory: frontend
+        working-directory: backend
         run: |
           python -m pip install --upgrade pip
           pip install ruff basedpyright pytest
           pip install -r requirements.txt
 
       - name: Lint with ruff
-        working-directory: frontend
+        working-directory: backend
         run: |
           ruff check .
 
       - name: Type-check with basedpyright
-        working-directory: frontend
+        working-directory: backend
         run: |
           basedpyright .
 
       - name: Check formatting using ruff
-        working-directory: frontend
+        working-directory: backend
         run: |
           ruff format --check .
 
       - name: Run tests with pytest
-        working-directory: frontend
+        working-directory: backend
         run: |
           pytest
