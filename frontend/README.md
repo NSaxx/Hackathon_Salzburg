@@ -25,7 +25,7 @@ npm run dev
 To run the Typescript compiler (including type-checking), use:
 
 ```bash
-npm run build
+npx tsc -b
 ```
 
 To run the linter (ESLint), use:
