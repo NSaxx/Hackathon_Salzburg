@@ -1,0 +1,2 @@
+# like this, add any ignores for any files you may use but should not be committed
+*/**/.DS_STORE
