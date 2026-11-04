@@ -28,7 +28,7 @@ function App() {
           throw new Error("Response is not ok");
         }
       })
-      .catch(_err => setMessage("could not reach backend"));
+      .catch(() => setMessage("could not reach backend"));
   }
 
   // Above is mostly normal Typescript

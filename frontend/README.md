@@ -7,6 +7,35 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
+## Setup/Running
+
+You need to have installed `npm` or an equivalent.
+Then do the following:
+
+```bash
+npm install
+```
+
+Now you can start the frontend:
+
+```bash
+npm run dev
+```
+
+To run the Typescript compiler (including type-checking), use:
+
+```bash
+npm run build
+```
+
+To run the linter (ESLint), use:
+
+```bash
+npm run lint
+```
+
+Importantly, `npm run dev` **does not type-check or lint**, so run the above two commands regularly (ideally they are integrated in your IDE.
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
