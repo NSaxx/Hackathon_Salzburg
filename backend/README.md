@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ### IDE Setup
 
 You should setup your IDE to use [basedpyright](https://docs.basedpyright.com/v1.30.1/) (or the worse [Pyright](https://microsoft.github.io/pyright/#/)) for static type-checking
-and [Ruff](https://docs.astral.sh/ruff/) for linting and formatting. Both can be installed via `pip`. Any further instructions heavily depend on the IDE.
+and [Ruff](https://docs.astral.sh/ruff/) for linting and formatting. Any further instructions heavily depend on the IDE.
 
 If you do not want to integrate them into your IDE, you can also run them via the CLI:
 
