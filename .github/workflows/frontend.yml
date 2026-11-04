@@ -1,0 +1,43 @@
+name: Frontend Workflow
+
+on:
+  push:
+    branches: ["main"]
+  pull_request: {}
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Lint with ESLint
+        working-directory: frontend
+        run: npm run lint
+
+      - name: Check formatting with Prettier
+        working-directory: frontend
+        run: npx prettier --check .
+
+      - name: Type-check with TypeScript
+        working-directory: frontend
+        run: npx tsc -b
+
+      - name: Build with Vite
+        working-directory: frontend
+        run: npm run build

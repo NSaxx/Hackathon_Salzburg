@@ -1,0 +1,48 @@
+name: Backend Workflow
+
+on:
+  push:
+    branches: ["main"]
+  pull_request: {} # run on all pull requests
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.14"
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff basedpyright pytest
+          pip install -r requirements.txt
+
+      - name: Lint with ruff
+        working-directory: frontend
+        run: |
+          ruff check .
+
+      - name: Type-check with basedpyright
+        working-directory: frontend
+        run: |
+          basedpyright .
+
+      - name: Check formatting using ruff
+        working-directory: frontend
+        run: |
+          ruff format --check .
+
+      - name: Run tests with pytest
+        working-directory: frontend
+        run: |
+          pytest
