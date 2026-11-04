@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useState } from "react";
+import heroImg from "./assets/hero.png";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   // common pattern for declarative state handling
   // the first variable stores the current state while the second is a function that mutates it
@@ -18,8 +18,9 @@ function App() {
     // after the address comes the "route", in this case just "/"
     // Depending on the task, we can use different routes for different tasks that the backend should handle
     fetch("http://127.0.0.1:8000/")
-      .then(async response => {
-        if (response.ok) { // check status code of response (e.g. 200, 400, 404)
+      .then(async (response) => {
+        if (response.ok) {
+          // check status code of response (e.g. 200, 400, 404)
           // result of fetch() and .json() is a Promise (async concept),
           // which you either "await" or use the methods .then() on
           const data = await response.json();
@@ -29,7 +30,7 @@ function App() {
         }
       })
       .catch(() => setMessage("could not reach backend"));
-  }
+  };
 
   // Above is mostly normal Typescript
   // Below is the part that makes this file a ".tsx" and not a ".ts".
@@ -95,11 +96,7 @@ function App() {
           <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
                 GitHub
@@ -107,11 +104,7 @@ function App() {
             </li>
             <li>
               <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#discord-icon"></use>
                 </svg>
                 Discord
@@ -119,11 +112,7 @@ function App() {
             </li>
             <li>
               <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#x-icon"></use>
                 </svg>
                 X.com
@@ -131,11 +120,7 @@ function App() {
             </li>
             <li>
               <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#bluesky-icon"></use>
                 </svg>
                 Bluesky
@@ -148,7 +133,7 @@ function App() {
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

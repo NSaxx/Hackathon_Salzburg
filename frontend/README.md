@@ -34,7 +34,13 @@ To run the linter (ESLint), use:
 npm run lint
 ```
 
-Importantly, `npm run dev` **does not type-check or lint**, so run the above two commands regularly (ideally they are integrated in your IDE.
+To format the code, use prettier:
+
+```bash
+npx prettier --write .
+```
+
+Importantly, `npm run dev` **does not type-check, lint or format**, so run the above three commands regularly (ideally they are integrated in your IDE.
 
 ## Expanding the ESLint configuration
 
