@@ -21,6 +21,7 @@ httptools==0.9.0
 httpx==0.28.1
 httpx2==2.16.0
 idna==3.20
+iniconfig==2.3.1
 Jinja2==3.1.6
 markdown-it-py==4.2.0
 MarkupSafe==3.0.4
@@ -34,12 +35,15 @@ opentelemetry-exporter-otlp-proto-http==1.45.2
 opentelemetry-proto==1.45.2
 opentelemetry-sdk==1.45.2
 opentelemetry-semantic-conventions==0.66b2
+packaging==26.3
+pluggy==1.7.0
 protobuf==7.36.2
 pydantic==2.14.2
 pydantic-extra-types==2.11.1
 pydantic-settings==2.16.2
 pydantic_core==2.50.2
 Pygments==2.21.0
+pytest==9.2.0
 python-dotenv==1.2.4
 python-multipart==0.0.33
 PyYAML==6.0.3
