@@ -2,7 +2,7 @@ name: Backend Workflow
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   pull_request: {} # run on all pull requests
 
 permissions:
