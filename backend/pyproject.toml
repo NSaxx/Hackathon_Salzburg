@@ -3,7 +3,8 @@ name = ""
 description = ""
 authors = [
   {name = "Sam Crawford", email="samlkc@proton.me"},
-  {name = "Bora Tascan", email="botascan@gmail.com"}
+  {name = "Bora Tascan", email="botascan@gmail.com"},
+  {name = "Venkata Paluri", email="p.v.s.s.2569420@gmail.com"}
 ]
 
 requires-python = ">=3.14"
