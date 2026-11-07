@@ -15,7 +15,8 @@ def data(latitude: float, longitude: float) -> pd.DataFrame:
     openmeteo = openmeteo_requests.Client(session=retry_session)
 
     # Make sure all required weather variables are listed here
-    # The order of variables in hourly or daily is important to assign them correctly below
+    # The order of variables in hourly or daily is important to assign them correctly
+    # below
     responses = openmeteo.weather_api(
         "https://api.open-meteo.com/v1/forecast",
         params={
@@ -29,9 +30,11 @@ def data(latitude: float, longitude: float) -> pd.DataFrame:
 
     # Process first location. Add a for-loop for multiple locations or weather models
     response = responses[0]
-    print(
-        f"Coordinates: {abs(response.Latitude())}°{'S' if response.Latitude() < 0 else 'N'} {abs(response.Longitude())}°{'W' if response.Longitude() < 0 else 'E'}"
-    )
+    lat = abs(response.Latitude())
+    long = abs(response.Longitude())
+    south_or_north = "S" if response.Latitude() < 0 else "N"
+    west_or_east = "W" if response.Longitude() < 0 else "E"
+    print(f"Coordinates: {lat}°{south_or_north} {long}°{west_or_east}")
     print(f"Elevation: {response.Elevation()} m asl")
     print(f"Timezone difference to GMT+0: {response.UtcOffsetSeconds()}s")
 
