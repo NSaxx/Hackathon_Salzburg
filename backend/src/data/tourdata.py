@@ -21,15 +21,15 @@ def points_of_interest() -> pd.DataFrame:
 
 
 def gastronomy() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Gastronomy (Gastro.json)")
+    return read_json_to_dataframe("data/Gastronomy (Gastro.json).json")
 
 
 def accomodation() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Accommodation (Vermieter.json)")
+    return read_json_to_dataframe("data/Accommodation (Vermieter.json).json")
 
 
 def events() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Events (Veranstaltung.json)")
+    return read_json_to_dataframe("data/Events (Veranstaltung.json).json")
 
 
 def tours() -> pd.DataFrame:
@@ -37,12 +37,14 @@ def tours() -> pd.DataFrame:
 
 
 def packages_and_offers() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Packages and offers (GlobalePauschale.json)")
+    return read_json_to_dataframe(
+        "data/Packages and offers (GlobalePauschale.json).json"
+    )
 
 
 def places() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Places (OrteInformation.json)")
+    return read_json_to_dataframe("data/Places (OrteInformation.json).json")
 
 
 def tourism_areas() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Tourism areas (Gebiet.json)")
+    return read_json_to_dataframe("data/Tourism areas (Gebiet.json).json")
