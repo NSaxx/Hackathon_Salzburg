@@ -33,6 +33,8 @@ mdurl==0.1.2
 niquests==3.21.2
 nodejs-wheel-binaries==24.19.0
 numpy==2.5.4
+openmeteo_requests==1.7.5
+openmeteo_sdk==1.30.0
 opentelemetry-api==1.45.2
 opentelemetry-exporter-http-transport==0.66b2
 opentelemetry-exporter-otlp-common==0.66b2
@@ -43,6 +45,7 @@ opentelemetry-sdk==1.45.2
 opentelemetry-semantic-conventions==0.66b2
 packaging==26.3
 pandas==3.1.1
+platformdirs==4.14.5
 pluggy==1.7.0
 protobuf==7.36.2
 pydantic==2.14.2
@@ -71,6 +74,7 @@ typer==0.27.3
 typing-inspection==0.4.4
 typing_extensions==4.16.0
 tzdata==2026.6
+url-normalize==3.1.0
 urllib3==2.8.0
 urllib3-future==2.25.905
 uvicorn==0.54.0
