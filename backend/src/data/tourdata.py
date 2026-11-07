@@ -11,7 +11,7 @@ def read_json_to_dataframe(filepath: str) -> pd.DataFrame:
         with open(filepath) as f:
             data = json.load(f)
             return pd.json_normalize(data, sep="_", record_path="items")
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         print(f"You need to download the dataset and name it '{filepath}'")
         sys.exit(1)
 
