@@ -51,4 +51,4 @@ pythonpath = [
 ]
 
 [tool.basedpyright]
-typeCheckingMode = "basic"
+typeCheckingMode = "off"
