@@ -1,10 +1,7 @@
 import pandas as pd
 import re
 
-D = (
-    "/Users/user/github-repos/Hackathon_Salzburg/backend/"
-    "datasets/upperaustria_denkmal_list.csv"
-)
+D = ("datasets/upperaustria_denkmal_list.csv")
 
 denkmal = pd.read_csv(D, sep=";")
 
@@ -112,7 +109,6 @@ touristic = denkmal[denkmal["category"].notna()].copy()
 #print(touristic["category"].value_counts())
 #
 #touristic[["HERIS-ID", "Gemeinde", "Objekttitel", "category", "Adresse"]].to_csv(
-#    "/Users/user/github-repos/Hackathon_Salzburg/backend/"
 #    "datasets/upperaustria_denkmal_touristic.csv",
 #    sep=";",
 #    index=False,
