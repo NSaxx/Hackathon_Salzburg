@@ -24,10 +24,6 @@ def gastronomy() -> pd.DataFrame:
     return read_json_to_dataframe("data/Gastronomy (Gastro.json).json")
 
 
-def accomodation() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Accommodation (Vermieter.json).json")
-
-
 def events() -> pd.DataFrame:
     return read_json_to_dataframe("data/Events (Veranstaltung.json).json")
 
