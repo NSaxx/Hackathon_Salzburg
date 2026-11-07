@@ -46,6 +46,3 @@ def places() -> pd.DataFrame:
 
 def tourism_areas() -> pd.DataFrame:
     return read_json_to_dataframe("data/Tourism areas (Gebiet.json)")
-
-
-print(tourism_areas())
