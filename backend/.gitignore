@@ -1,3 +1,7 @@
+*/**/__pycache__/
 */**/__pycache__/*
 env/
+.cache.sqlite
 
+# directory containing data sets
+data/
