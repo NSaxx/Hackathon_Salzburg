@@ -1,10 +1,44 @@
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 
 import type { MapLocation } from "../../data/locations";
-import { sendChatMessages, type ChatMessage } from "../../services/chatApi";
+import {
+  sendChatMessages,
+  type ChatMessage,
+  type ChatSource,
+} from "../../services/chatApi";
 
 interface Props {
   location: MapLocation | null;
+}
+
+function Sources({ sources }: { sources: ChatSource[] }) {
+  const providers = [...new Map(sources.map((s) => [s.provider, s])).values()];
+
+  return (
+    <div className="sources">
+      <p className="sources-label">Sources</p>
+      <ul>
+        {sources.map((source) => (
+          <li key={source.id}>
+            <a href={source.url} target="_blank" rel="noreferrer">
+              {source.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p className="sources-credit">
+        {providers.map((source, index) => (
+          <Fragment key={source.provider}>
+            {index > 0 && " · "}
+            {source.provider},{" "}
+            <a href={source.licenceUrl} target="_blank" rel="noreferrer">
+              {source.licence}
+            </a>
+          </Fragment>
+        ))}
+      </p>
+    </div>
+  );
 }
 
 export default function ChatBox({ location }: Props) {
@@ -15,13 +49,22 @@ export default function ChatBox({ location }: Props) {
 
   const abortRef = useRef<AbortController | null>(null);
   const logRef = useRef<HTMLDivElement | null>(null);
+  const replyRef = useRef<HTMLParagraphElement | null>(null);
 
   useEffect(() => () => abortRef.current?.abort(), []);
 
-  // Scroll the log itself so the panel around it doesn't jump.
+  // Scroll the log itself so the panel around it doesn't jump. A new reply starts at the
+  // top of the log so it can be read downwards; anything else just needs to be in view.
   useEffect(() => {
     const log = logRef.current;
-    if (log) log.scrollTop = log.scrollHeight;
+    if (!log) return;
+
+    if (replyRef.current) {
+      log.scrollTop +=
+        replyRef.current.getBoundingClientRect().top - log.getBoundingClientRect().top;
+    } else {
+      log.scrollTop = log.scrollHeight;
+    }
   }, [messages, sending, error]);
 
   async function send(history: ChatMessage[]) {
@@ -33,7 +76,7 @@ export default function ChatBox({ location }: Props) {
 
     try {
       const reply = await sendChatMessages(history, location, controller.signal);
-      setMessages([...history, { role: "assistant", content: reply }]);
+      setMessages([...history, reply]);
     } catch (err) {
       if (controller.signal.aborted) return;
       console.error(err);
@@ -58,14 +101,27 @@ export default function ChatBox({ location }: Props) {
       <div className="chat-log" ref={logRef} role="log" aria-live="polite">
         {messages.length === 0 && !sending && (
           <p className="chat-hint">
-            Ask about museums, events, monuments or the weather in Upper Austria.
+            Ask about restaurants, tours, events, monuments or the weather. Select a
+            place on the map to ask about it.
           </p>
         )}
 
         {messages.map((message, index) => (
-          <p key={index} className={`bubble bubble--${message.role}`}>
-            {message.content}
-          </p>
+          <Fragment key={index}>
+            <p
+              className={`bubble bubble--${message.role}`}
+              ref={
+                message.role === "assistant" && index === messages.length - 1
+                  ? replyRef
+                  : undefined
+              }
+            >
+              {message.content}
+            </p>
+            {message.sources && message.sources.length > 0 && (
+              <Sources sources={message.sources} />
+            )}
+          </Fragment>
         ))}
 
         {sending && (

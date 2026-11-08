@@ -39,6 +39,8 @@ def test_location_returns_weather_summary(monkeypatch):
     assert weather["current"]["is_day"] is True
     assert [day["temperature_max"] for day in weather["days"]] == [23, 47, 71]
     assert [day["temperature_min"] for day in weather["days"]] == [0, 24, 48]
+    assert weather["source"]["url"].startswith("https://open-meteo.com")
+    assert weather["source"]["licence"] == "CC BY 4.0"
 
 
 def test_location_rejects_invalid_coordinates():
