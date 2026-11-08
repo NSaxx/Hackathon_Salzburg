@@ -121,7 +121,7 @@ def to_schema(row: dict[str, Any]) -> dict[str, Any]:
     )
 
 
-def main() -> None:
+def to_schema_org() -> None:
     df = pd.read_csv(CSV_IN, dtype={"zip": str, "phone": str}).fillna("")
     df["categories"] = df["categories"].apply(parse_list)
 
@@ -136,13 +136,12 @@ def main() -> None:
     if skipped:
         print(f"Skipped {skipped} interval(s) that have no weekdays")
 
-    doc = {
+    return {
         "@context": "https://schema.org",
         "@graph": [to_schema(row) for row in df.to_dict("records")],
     }
-    with open(JSONLD_OUT, "w", encoding="utf-8") as f:
-        json.dump(doc, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
-    main()
+    with open(JSONLD_OUT, "w", encoding="utf-8") as f:
+        json.dump(to_schema_org(), f, ensure_ascii=False, indent=2)
