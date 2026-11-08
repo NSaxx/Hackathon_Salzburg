@@ -5,38 +5,18 @@ import ChatBox from "./components/Chat/ChatBox";
 import InteractiveMap from "./components/Map/InteractiveMap";
 import WeatherCard from "./components/Weather/WeatherCard";
 import { locations, type MapLocation } from "./data/locations";
-import {
-  fetchLocationData,
-  fetchMonuments,
-  type LocationData,
-} from "./services/locationApi";
+import { fetchLocationData, type LocationData } from "./services/locationApi";
 
 function App() {
   const [selectedLocation, setSelectedLocation] = useState<MapLocation | null>(null);
   const [data, setData] = useState<LocationData | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [monuments, setMonuments] = useState<MapLocation[]>([]);
-  const [monumentsError, setMonumentsError] = useState(false);
 
   // Only the most recent click may update state; earlier in-flight requests are aborted.
   const abortRef = useRef<AbortController | null>(null);
 
   useEffect(() => () => abortRef.current?.abort(), []);
-
-  useEffect(() => {
-    const controller = new AbortController();
-
-    fetchMonuments(controller.signal)
-      .then(setMonuments)
-      .catch((err) => {
-        if (controller.signal.aborted) return;
-        console.error(err);
-        setMonumentsError(true);
-      });
-
-    return () => controller.abort();
-  }, []);
 
   const handleLocationClick = useCallback(async (location: MapLocation) => {
     abortRef.current?.abort();
@@ -69,21 +49,12 @@ function App() {
       <main className="map-container">
         <InteractiveMap
           locations={locations}
-          monuments={monuments}
           selectedLocation={selectedLocation}
           onLocationClick={handleLocationClick}
         />
       </main>
 
       <aside className="info-panel">
-        <header className="brand">
-          <span className="brand-mark" aria-hidden="true" />
-          <div>
-            <h1>Atriensis Danubii</h1>
-            <p>AI concierge for Upper Austria</p>
-          </div>
-        </header>
-
         <p className="eyebrow">Destinations</p>
         <ul className="chips">
           {locations.map((location) => (
@@ -99,14 +70,6 @@ function App() {
             </li>
           ))}
         </ul>
-
-        {(monuments.length > 0 || monumentsError) && (
-          <p className="monument-count">
-            {monumentsError
-              ? "Monuments could not be loaded."
-              : `${monuments.length} monuments on the map`}
-          </p>
-        )}
 
         <section className="details" aria-live="polite">
           {selectedLocation ? (
@@ -151,6 +114,17 @@ function App() {
         </section>
 
         <ChatBox location={selectedLocation} />
+
+        <p className="data-licence">
+          Data: TOURDATA, Bundesdenkmalamt (adapted) ·{" "}
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CC BY 4.0
+          </a>
+        </p>
       </aside>
     </div>
   );

@@ -28,7 +28,7 @@ function weekday(date: string, index: number) {
 }
 
 export default function WeatherCard({ weather }: { weather: WeatherSummary }) {
-  const { current, days } = weather;
+  const { current, days, source } = weather;
   const { icon, label } = describeWeather(current.weather_code, current.is_day);
 
   return (
@@ -66,6 +66,17 @@ export default function WeatherCard({ weather }: { weather: WeatherSummary }) {
           );
         })}
       </ol>
+
+      <p className="weather-credit">
+        Weather:{" "}
+        <a href={source.url} target="_blank" rel="noreferrer">
+          {source.name}
+        </a>
+        {" · "}
+        <a href={source.licenceUrl} target="_blank" rel="noreferrer">
+          {source.licence}
+        </a>
+      </p>
     </div>
   );
 }

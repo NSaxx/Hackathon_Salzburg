@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@type": "dcat:Dataset",
+  "dct:identifier": "upper-austria-heritage-experience-graph",
+  "dct:title": [
+    {"@language": "en", "@value": "Upper Austria Heritage Experience Graph"},
+    {"@language": "de", "@value": "Oberösterreich Kulturerbe-Erlebnisgraph"}
+  ],
+  "dct:description": [
+    {"@language": "en", "@value": "18,145 tourism places in Upper Austria in one catalogue, with 29,503 typed links connecting 918 protected monuments to the tours that pass them and nearby food, stays and events. Joinable by official municipality code."},
+    {"@language": "de", "@value": "18.145 touristische Orte in Oberösterreich in einem Katalog, mit 29.503 typisierten Verknüpfungen zwischen 918 denkmalgeschützten Sehenswürdigkeiten und den Touren, die daran vorbeiführen, sowie Gastronomie, Unterkünften und Veranstaltungen in der Nähe. Über die amtliche Gemeindekennzahl kombinierbar."}
+  ],
+  "dcat:keyword": ["tourism", "Upper Austria", "Oberösterreich", "heritage", "Denkmal", "tours", "gastronomy", "accommodation", "events", "linked data", "schema.org"],
+  "dcat:theme": {"@id": "http://publications.europa.eu/resource/authority/data-theme/TOUR"},
+  "dct:spatial": {"@id": "https://www.wikidata.org/wiki/Q41967"},
+  "dct:temporal": {"@type": "dct:PeriodOfTime", "dcat:startDate": {"@type": "xsd:date", "@value": "2026-11-04"}, "dcat:endDate": {"@type": "xsd:date", "@value": "2027-10-31"}},
+  "dct:issued": {"@type": "xsd:date", "@value": "2026-11-08"},
+  "dct:modified": {"@type": "xsd:date", "@value": "2026-11-08"},
+  "dcat:version": "1.0",
+  "dct:accrualPeriodicity": {"@id": "http://publications.europa.eu/resource/authority/frequency/NEVER"},
+  "dct:publisher": {"@type": "foaf:Organization", "foaf:name": "Team Atriensis Danubii, Salzburg Tourism Hackathon 2026"},
+  "dct:rights": "Derived from TOURDATA via the TTF Data Space and subject to its data space policy. See README.md for the terms of each source.",
+  "dct:source": [
+    "https://datenwartung.tourdata.at/",
+    "https://www.bda.gv.at/service/unterschutzstellung/denkmalverzeichnis/denkmalliste-gemaess-3-dmsg.html",
+    "https://www.wikidata.org/",
+    "https://www.openstreetmap.org/copyright"
+  ],
+  "dcat:distribution": [
+    {"@type": "dcat:Distribution", "dct:title": "places.csv", "dct:description": "Unified catalogue of places", "dcat:mediaType": "text/csv"},
+    {"@type": "dcat:Distribution", "dct:title": "links.csv", "dct:description": "Typed relations between places", "dcat:mediaType": "text/csv"},
+    {"@type": "dcat:Distribution", "dct:title": "municipalities.csv", "dct:description": "Indicators per municipality", "dcat:mediaType": "text/csv"},
+    {"@type": "dcat:Distribution", "dct:title": "alerts.csv", "dct:description": "Trail and site notices", "dcat:mediaType": "text/csv"},
+    {"@type": "dcat:Distribution", "dct:title": "monument_cards.jsonl", "dct:description": "One self-contained record per monument", "dcat:mediaType": "application/x-ndjson"},
+    {"@type": "dcat:Distribution", "dct:title": "heritage_graph.jsonld", "dct:description": "schema.org graph of monuments and tours", "dcat:mediaType": "application/ld+json"},
+    {"@type": "dcat:Distribution", "dct:title": "data_dictionary.csv", "dct:description": "Definition of every column", "dcat:mediaType": "text/csv"}  ]
+}

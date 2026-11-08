@@ -1,0 +1,431 @@
+gemeinde_code,municipality,district,region,monuments_protected,monuments_touristic,monuments_on_a_tour,monuments_with_food_1km,monuments_with_stay_2km,tours,tour_km,gastro,stays,beds,events,family_offers,weather_independent_offers,wheelchair_offers,monuments_per_1000_beds,event_series_active_2026-11,event_series_active_2026-12,event_series_active_2027-01,event_series_active_2027-02,event_series_active_2027-03,event_series_active_2027-04,event_series_active_2027-05,event_series_active_2027-06,event_series_active_2027-07,event_series_active_2027-08,event_series_active_2027-09,event_series_active_2027-10
+40101,Linz,Linz(Stadt),Linz an der Donau,560,57,50,54,54,126,6845.8,437,183,6272,1187,358,313,376,9.09,511,403,201,171,150,148,111,105,86,53,50,54
+40201,Steyr,Steyr(Stadt),360° ALPENLAND,611,27,24,25,25,19,1155.8,89,76,1569,112,113,80,15,17.21,76,50,11,5,6,4,5,5,6,5,4,4
+40301,Wels,Wels(Stadt),Region Wels,198,27,24,26,26,63,3013.1,203,55,1692,214,308,329,80,15.96,113,61,22,17,14,22,17,14,16,14,12,9
+40401,Altheim,Braunau am Inn,Quellenviertel,10,2,2,2,2,17,1407.1,20,7,137,42,19,21,7,14.6,19,12,6,4,1,1,2,1,2,1,2,2
+40402,Aspach,Braunau am Inn,Quellenviertel,11,2,2,0,1,11,63.8,12,5,85,5,17,21,8,23.53,2,1,4,1,1,1,1,1,1,1,1,2
+40403,Auerbach,Braunau am Inn,,3,1,1,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40404,Braunau am Inn,Braunau am Inn,Quellenviertel,251,35,33,33,34,37,3071.0,38,27,441,32,62,43,11,79.37,20,21,11,10,10,9,9,9,9,9,10,9
+40405,Burgkirchen,Braunau am Inn,,6,1,1,1,1,2,9.7,3,2,36,0,1,0,0,27.78,0,0,0,0,0,0,0,0,0,0,0,0
+40406,Eggelsberg,Braunau am Inn,Quellenviertel,4,1,1,1,1,9,43.9,7,8,135,3,11,6,4,7.41,3,2,1,1,1,1,1,1,1,1,1,1
+40407,Feldkirchen bei Mattighofen,Braunau am Inn,,9,2,2,2,1,1,19.1,3,2,4,4,7,7,2,500.0,1,2,1,0,0,0,0,0,0,0,0,0
+40408,Franking,Braunau am Inn,Quellenviertel,1,0,0,0,0,6,157.5,7,18,323,1,23,8,8,0.0,0,1,0,0,0,0,0,0,0,0,0,0
+40409,Geretsberg,Braunau am Inn,,5,0,0,0,0,1,8.5,1,0,0,0,0,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40410,Gilgenberg am Weilhart,Braunau am Inn,,4,0,0,0,0,1,39.2,2,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40411,Haigermoos,Braunau am Inn,Quellenviertel,1,0,0,0,0,1,5.5,2,3,15,0,1,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40412,Handenberg,Braunau am Inn,,3,0,0,0,0,0,0.0,5,2,35,1,0,0,0,0.0,0,1,0,0,0,0,0,0,0,0,0,0
+40413,Helpfau-Uttendorf,Braunau am Inn,Quellenviertel,12,1,0,1,1,7,37.8,3,5,147,1,8,3,5,6.8,1,0,0,0,0,0,0,0,0,0,0,0
+40414,Hochburg-Ach,Braunau am Inn,Quellenviertel,11,1,1,1,1,4,60.2,7,11,157,2,16,7,12,6.37,0,2,0,0,0,0,0,0,0,0,0,0
+40415,Höhnhart,Braunau am Inn,Quellenviertel,2,0,0,0,0,6,66.2,5,4,36,13,11,6,1,0.0,6,5,3,2,2,1,3,1,1,1,1,1
+40416,Jeging,Braunau am Inn,,3,0,0,0,0,0,0.0,2,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40417,Kirchberg bei Mattighofen,Braunau am Inn,Quellenviertel,3,0,0,0,0,1,1.2,3,2,31,1,6,4,2,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+40418,Lengau,Braunau am Inn,Quellenviertel,14,4,4,3,4,12,90.6,7,10,117,4,14,5,3,34.19,1,2,0,0,0,0,0,0,0,0,0,1
+40419,Lochen,Braunau am Inn,Quellenviertel,7,1,1,0,1,8,137.9,7,4,76,0,9,5,4,13.16,0,0,0,0,0,0,0,0,0,0,0,0
+40420,Maria Schmolln,Braunau am Inn,Quellenviertel,6,2,2,2,2,11,166.4,8,5,28,4,14,10,4,71.43,1,2,0,1,0,0,0,0,0,0,0,0
+40421,Mattighofen,Braunau am Inn,Quellenviertel,10,1,1,1,1,23,2942.2,12,7,43,51,29,24,10,23.26,21,9,4,4,6,4,3,1,1,0,1,1
+40422,Mauerkirchen,Braunau am Inn,,12,1,1,1,1,1,4.0,3,1,10,0,0,0,0,100.0,0,0,0,0,0,0,0,0,0,0,0,0
+40423,Mining,Braunau am Inn,Quellenviertel,6,4,4,2,2,1,9.1,3,2,10,1,3,3,2,400.0,0,0,0,0,0,0,0,0,0,0,0,1
+40424,Moosbach,Braunau am Inn,,4,0,0,0,0,3,17.3,0,0,0,0,3,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40425,Moosdorf,Braunau am Inn,,2,1,0,1,1,0,0.0,5,3,14,0,5,5,2,71.43,0,0,0,0,0,0,0,0,0,0,0,0
+40426,Munderfing,Braunau am Inn,Quellenviertel,7,1,1,1,1,16,103.4,7,6,142,1,6,4,3,7.04,1,0,0,0,0,0,0,0,0,0,0,0
+40427,Neukirchen an der Enknach,Braunau am Inn,,6,1,0,0,0,0,0.0,5,1,11,0,1,2,0,90.91,0,0,0,0,0,0,0,0,0,0,0,0
+40428,Ostermiething,Braunau am Inn,,6,1,1,0,0,0,0.0,3,0,0,0,3,3,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40429,Palting,Braunau am Inn,Quellenviertel,2,0,0,0,0,0,0.0,2,2,24,1,4,0,1,0.0,1,1,1,1,1,1,1,1,1,1,1,1
+40430,Perwang am Grabensee,Braunau am Inn,Quellenviertel,3,1,1,1,1,12,411.2,4,6,3,0,8,3,2,333.33,0,0,0,0,0,0,0,0,0,0,0,0
+40432,Pischelsdorf am Engelbach,Braunau am Inn,,7,3,2,1,2,0,0.0,6,3,15,0,2,1,1,200.0,0,0,0,0,0,0,0,0,0,0,0,0
+40433,Polling im Innkreis,Braunau am Inn,,1,0,0,0,0,0,0.0,1,0,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40434,Roßbach,Braunau am Inn,Quellenviertel,2,0,0,0,0,6,64.2,2,0,0,0,6,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40435,St. Georgen am Fillmannsbach,Braunau am Inn,,5,0,0,0,0,1,2.8,0,0,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40436,St. Johann am Walde,Braunau am Inn,,3,1,1,1,0,2,2.4,4,0,0,1,3,0,0,,0,0,0,0,0,0,0,0,0,0,1,0
+40437,St. Pantaleon,Braunau am Inn,Quellenviertel,7,2,2,2,2,2,304.9,10,7,89,1,12,9,2,22.47,1,1,0,0,0,0,0,0,0,0,0,0
+40438,St. Peter am Hart,Braunau am Inn,Quellenviertel,6,2,2,2,2,0,0.0,3,3,53,1,5,1,2,37.74,1,0,0,0,0,0,0,0,0,0,0,0
+40439,St. Radegund,Braunau am Inn,Quellenviertel,4,1,0,0,1,1,6.3,1,2,38,0,3,1,0,26.32,0,0,0,0,0,0,0,0,0,0,0,0
+40440,St. Veit im Innkreis,Braunau am Inn,Quellenviertel,1,0,0,0,0,4,83.7,1,0,0,0,3,2,1,,0,0,0,0,0,0,0,0,0,0,0,0
+40441,Schalchen,Braunau am Inn,,4,0,0,0,0,1,43.8,8,2,0,0,0,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40442,Schwand im Innkreis,Braunau am Inn,,3,0,0,0,0,0,0.0,3,0,0,0,0,0,1,,0,0,0,0,0,0,0,0,0,0,0,0
+40443,Tarsdorf,Braunau am Inn,,2,0,0,0,0,6,32.3,4,2,26,0,8,6,5,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40444,Treubach,Braunau am Inn,Quellenviertel,1,0,0,0,0,0,0.0,0,0,0,1,0,0,0,,0,1,0,0,0,0,0,0,0,0,0,0
+40445,Überackern,Braunau am Inn,,4,3,1,1,1,0,0.0,1,3,6,0,1,0,1,500.0,0,0,0,0,0,0,0,0,0,0,0,0
+40446,Weng im Innkreis,Braunau am Inn,Quellenviertel,3,0,0,0,0,4,31.3,4,3,131,1,9,4,2,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+40501,Alkoven,Eferding,,10,2,2,1,2,1,6.7,11,4,4,0,8,7,3,500.0,0,0,0,0,0,0,0,0,0,0,0,0
+40502,Aschach an der Donau,Eferding,Donauregion Oberösterreich,69,3,2,3,3,8,58.3,13,5,68,1,19,9,10,44.12,1,1,1,1,1,1,1,1,1,1,1,1
+40503,Eferding,Eferding,Donauregion Oberösterreich,113,4,4,4,4,3,81.0,10,6,90,5,14,7,4,44.44,2,0,0,2,0,1,0,0,0,0,0,0
+40504,Fraham,Eferding,,0,0,0,0,0,0,0.0,0,0,0,1,1,0,0,,1,0,0,0,0,0,0,0,0,0,0,0
+40505,Haibach ob der Donau,Eferding,Donauregion Oberösterreich,4,2,1,0,1,10,100.9,8,6,264,3,23,13,10,7.58,1,1,0,0,0,0,1,0,0,0,0,0
+40506,Hartkirchen,Eferding,,8,1,1,0,0,1,10.7,9,4,33,0,1,2,1,30.3,0,0,0,0,0,0,0,0,0,0,0,0
+40507,Hinzenbach,Eferding,,1,0,0,0,0,1,6.7,2,0,0,0,0,0,1,,0,0,0,0,0,0,0,0,0,0,0,0
+40508,Prambachkirchen,Eferding,,4,2,0,1,0,0,0.0,4,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40509,Pupping,Eferding,Donauregion Oberösterreich,3,1,0,0,0,1,12.2,3,2,61,1,7,5,2,16.39,0,0,0,0,1,0,0,0,0,0,0,0
+40510,St. Marienkirchen an der Polsenz,Eferding,,3,1,1,1,1,6,74.3,2,3,0,2,8,1,0,,1,1,0,0,0,0,0,0,0,0,0,0
+40511,Scharten,Eferding,,6,0,0,0,0,8,57.8,6,4,12,1,18,5,1,0.0,0,1,0,0,0,0,0,0,0,0,0,0
+40512,Stroheim,Eferding,,4,0,0,0,0,0,0.0,4,0,0,0,0,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40601,Freistadt,Freistadt,Mühlviertel,165,31,30,30,30,61,2290.3,39,17,543,79,59,68,9,57.09,45,23,9,5,6,8,5,4,2,2,5,3
+40602,Grünbach,Freistadt,Mühlviertel,5,0,0,0,0,16,142.7,4,2,18,1,16,10,0,0.0,0,1,0,0,0,0,0,0,0,0,0,0
+40603,Gutau,Freistadt,Mühlviertel,14,4,4,2,4,16,189.0,8,13,68,5,20,7,1,58.82,3,2,0,0,0,0,0,0,0,0,0,0
+40604,Hagenberg im Mühlkreis,Freistadt,Mühlviertel,4,2,1,1,1,20,477.5,9,6,201,4,19,19,4,9.95,3,1,1,1,1,1,1,1,1,1,1,1
+40605,Hirschbach im Mühlkreis,Freistadt,Mühlviertel,5,1,1,1,1,19,131.7,3,7,44,14,14,6,2,22.73,5,3,2,0,1,2,0,0,1,0,0,0
+40606,Kaltenberg,Freistadt,Mühlviertel,1,1,1,1,1,8,90.2,3,6,32,3,15,6,1,31.25,0,3,0,0,0,0,0,0,0,0,0,0
+40607,Kefermarkt,Freistadt,Mühlviertel,11,4,3,3,3,20,173.2,6,5,114,24,23,29,3,35.09,11,7,4,0,1,0,1,0,0,1,0,0
+40608,Königswiesen,Freistadt,Mühlviertel,7,1,0,0,0,55,2754.0,10,12,237,1,16,6,2,4.22,0,1,0,0,0,0,0,0,0,0,0,0
+40609,Lasberg,Freistadt,Mühlviertel,10,2,2,2,2,28,311.7,8,6,43,5,13,16,5,46.51,3,1,3,1,0,0,0,0,0,0,0,0
+40610,Leopoldschlag,Freistadt,Mühlviertel,14,5,4,1,5,17,243.8,6,6,70,16,11,4,3,71.43,5,1,3,2,0,1,2,1,1,0,0,0
+40611,Liebenau,Freistadt,Mühlviertel,5,1,1,1,1,36,1456.0,8,14,137,4,28,13,6,7.3,2,3,0,0,0,0,0,0,0,0,0,0
+40612,Neumarkt im Mühlkreis,Freistadt,Mühlviertel,7,2,2,0,2,18,257.6,6,5,42,1,11,7,0,47.62,1,0,0,0,0,0,0,0,0,0,0,0
+40613,Pierbach,Freistadt,Mühlviertel,4,1,1,1,1,8,177.1,6,4,36,2,10,3,2,27.78,2,0,0,0,0,0,0,0,0,0,0,0
+40614,Pregarten,Freistadt,Mühlviertel,9,1,1,1,1,17,449.6,18,9,39,6,29,29,1,25.64,1,5,0,0,0,0,0,0,0,0,0,0
+40615,Rainbach im Mühlkreis,Freistadt,Mühlviertel,9,5,5,4,5,28,601.1,5,7,88,2,22,10,4,56.82,1,1,0,0,0,0,0,0,0,0,0,0
+40616,Sandl,Freistadt,Mühlviertel,4,0,0,0,0,22,199.2,6,8,24,6,25,14,5,0.0,2,1,1,0,0,0,1,0,0,1,0,0
+40617,St. Leonhard bei Freistadt,Freistadt,Mühlviertel,8,2,1,1,1,11,149.7,6,7,142,2,20,3,1,14.08,1,1,0,0,0,0,0,0,0,0,0,0
+40618,St. Oswald bei Freistadt,Freistadt,Mühlviertel,9,3,3,3,3,22,268.1,5,10,245,5,18,1,1,12.24,1,3,0,0,0,0,0,0,1,0,0,0
+40619,Schönau im Mühlkreis,Freistadt,Mühlviertel,7,1,1,1,1,8,599.6,6,7,72,3,14,4,1,13.89,1,2,0,0,0,0,0,0,0,0,0,0
+40620,Tragwein,Freistadt,Mühlviertel,13,4,4,4,4,17,185.8,10,3,66,8,12,13,4,60.61,5,1,3,1,1,1,1,2,1,1,1,1
+40621,Unterweißenbach,Freistadt,Mühlviertel,7,2,2,2,2,21,1179.2,14,9,194,6,27,8,4,10.31,3,4,0,0,0,0,0,0,0,0,0,0
+40622,Unterweitersdorf,Freistadt,Mühlviertel,0,0,0,0,0,2,54.5,1,0,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40623,Waldburg,Freistadt,Mühlviertel,8,2,2,0,2,9,97.9,1,4,17,0,6,0,1,117.65,0,0,0,0,0,0,0,0,0,0,0,0
+40624,Wartberg ob der Aist,Freistadt,Mühlviertel,8,1,0,1,1,2,26.9,10,3,65,0,4,4,0,15.38,0,0,0,0,0,0,0,0,0,0,0,0
+40625,Weitersfelden,Freistadt,Mühlviertel,7,1,1,1,1,10,130.6,4,3,38,1,14,4,0,26.32,1,1,1,0,0,0,0,0,0,0,0,0
+40626,Windhaag bei Freistadt,Freistadt,Mühlviertel,7,2,2,2,2,16,156.7,4,7,27,13,12,14,3,74.07,3,4,2,0,3,0,0,0,0,0,2,0
+40627,Bad Zell,Freistadt,Mühlviertel,10,2,2,1,1,23,856.0,11,12,490,4,19,13,6,4.08,1,3,0,0,0,0,0,0,0,0,0,0
+40701,Altmünster,Gmunden,Salzkammergut,22,3,3,2,3,31,306.4,32,115,559,33,109,20,19,5.37,12,12,0,5,3,2,2,2,2,0,1,2
+40702,Bad Goisern am Hallstättersee,Gmunden,Salzkammergut,40,12,9,7,8,60,1370.3,36,115,1155,67,190,92,27,10.39,28,26,13,14,10,9,8,8,8,9,9,6
+40703,Bad Ischl,Gmunden,Salzkammergut,147,29,24,22,25,68,2121.3,68,126,1923,113,98,96,38,15.08,63,51,24,17,14,11,13,11,2,4,3,3
+40704,Ebensee,Gmunden,Salzkammergut,29,11,7,6,6,80,1066.5,38,74,1060,48,103,31,9,10.38,12,10,8,8,4,5,7,2,3,2,1,0
+40705,Gmunden,Gmunden,Salzkammergut,139,17,17,17,17,78,1849.8,90,137,1082,104,147,126,14,15.71,46,28,18,10,9,6,5,4,4,2,3,1
+40706,Gosau,Gmunden,Salzkammergut,9,3,0,0,0,60,850.4,29,95,1515,25,168,37,7,1.98,6,12,7,6,5,3,3,2,2,2,2,3
+40707,Grünau im Almtal,Gmunden,Salzkammergut,7,2,1,1,1,62,870.2,27,50,1064,15,82,14,10,1.88,11,5,2,2,1,2,0,0,0,0,0,0
+40708,Gschwandt,Gmunden,Salzkammergut,3,0,0,0,0,2,10.6,2,3,12,5,8,4,0,0.0,3,1,0,0,0,1,0,0,0,0,0,0
+40709,Hallstatt,Gmunden,Salzkammergut,79,20,8,7,8,8,43.5,22,53,605,11,71,29,5,33.06,3,7,2,2,2,3,3,2,2,2,3,2
+40710,Kirchham,Gmunden,Salzkammergut,1,0,0,0,0,0,0.0,8,1,2,0,4,4,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40711,Laakirchen,Gmunden,Salzkammergut,8,3,3,3,3,10,103.3,29,19,128,10,35,23,0,23.44,4,5,2,3,3,2,2,3,2,2,2,2
+40712,Obertraun,Gmunden,Salzkammergut,6,2,2,1,2,28,474.1,14,55,1158,12,80,21,11,1.73,3,3,3,1,1,1,1,0,0,0,0,0
+40713,Ohlsdorf,Gmunden,Salzkammergut,6,0,0,0,0,0,0.0,12,13,104,5,15,10,0,0.0,2,3,1,0,0,0,0,0,0,0,0,0
+40714,Pinsdorf,Gmunden,Salzkammergut,2,0,0,0,0,7,81.9,9,12,47,6,10,5,1,0.0,6,0,0,0,0,0,0,0,0,0,0,0
+40715,Roitham am Traunfall,Gmunden,Salzkammergut,9,1,1,1,1,2,22.2,5,1,0,0,6,3,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40716,St. Konrad,Gmunden,Salzkammergut,1,0,0,0,0,10,102.1,7,8,66,7,22,6,2,0.0,5,4,1,1,1,1,1,1,1,1,0,0
+40717,St. Wolfgang im Salzkammergut,Gmunden,Salzkammergut,17,2,2,2,2,74,1444.8,72,168,2550,44,111,88,32,0.78,18,27,8,3,3,6,4,1,1,1,1,1
+40718,Traunkirchen,Gmunden,Salzkammergut,26,5,5,5,5,28,248.5,14,41,611,15,37,14,10,8.18,5,6,2,1,1,0,0,0,0,1,0,0
+40719,Scharnstein,Gmunden,Salzkammergut,18,5,4,4,4,28,269.4,23,29,223,18,43,20,5,22.42,15,7,2,2,2,2,2,2,2,2,2,1
+40720,Vorchdorf,Gmunden,Salzkammergut,16,1,1,1,1,19,362.4,39,13,173,14,41,33,3,5.78,11,7,2,2,2,2,3,2,2,2,2,2
+40801,Aistersheim,Grieskirchen,,5,1,1,1,0,0,0.0,1,0,0,0,0,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40802,Bad Schallerbach,Grieskirchen,Quellenviertel,9,1,1,1,1,23,324.1,20,28,813,97,88,25,17,1.23,22,17,4,2,5,5,9,6,9,10,4,7
+40804,Eschenau im Hausruckkreis,Grieskirchen,,0,0,0,0,0,0,0.0,1,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40805,Gallspach,Grieskirchen,Quellenviertel,7,2,2,2,2,11,119.6,11,17,203,79,80,8,7,9.85,12,19,10,11,14,6,4,2,6,8,3,4
+40806,Gaspoltshofen,Grieskirchen,,6,0,0,0,0,3,29.0,10,0,0,3,4,4,2,,1,1,0,0,0,1,0,1,0,0,0,0
+40807,Geboltskirchen,Grieskirchen,Quellenviertel,1,0,0,0,0,26,363.7,6,6,148,32,49,10,10,0.0,16,15,2,1,2,0,0,0,0,1,0,0
+40808,Grieskirchen,Grieskirchen,Quellenviertel,28,4,4,4,4,10,150.3,27,7,119,72,58,13,8,33.61,28,37,7,4,5,4,3,2,3,2,2,2
+40809,Haag am Hausruck,Grieskirchen,Quellenviertel,6,3,3,3,3,15,193.3,8,6,57,25,37,10,10,52.63,14,7,1,1,2,0,0,0,1,0,0,0
+40811,Hofkirchen an der Trattnach,Grieskirchen,,4,0,0,0,0,0,0.0,3,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40812,Kallham,Grieskirchen,,2,0,0,0,0,0,0.0,5,1,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40813,Kematen am Innbach,Grieskirchen,,5,0,0,0,0,0,0.0,2,0,0,0,0,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40814,Meggenhofen,Grieskirchen,,8,0,0,0,0,2,41.9,3,2,50,0,2,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40815,Michaelnbach,Grieskirchen,,3,0,0,0,0,0,0.0,3,0,0,0,2,1,2,,0,0,0,0,0,0,0,0,0,0,0,0
+40816,Natternbach,Grieskirchen,Donauregion Oberösterreich,1,0,0,0,0,7,79.4,4,3,394,7,18,10,3,0.0,6,6,5,4,4,4,4,4,4,4,4,4
+40817,Neukirchen am Walde,Grieskirchen,,4,0,0,0,0,8,168.9,5,1,10,0,3,2,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40818,Neumarkt im Hausruckkreis,Grieskirchen,,6,0,0,0,0,2,18.2,3,3,30,2,2,1,0,0.0,0,0,0,0,1,1,0,1,0,0,1,1
+40820,Pötting,Grieskirchen,,1,0,0,0,0,1,8.1,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40821,Pollham,Grieskirchen,,5,0,0,0,0,1,10.1,2,1,0,0,2,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40822,Pram,Grieskirchen,,7,1,1,1,0,0,0.0,3,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40823,Rottenbach,Grieskirchen,Quellenviertel,3,0,0,0,0,3,80.1,6,3,96,11,19,3,1,0.0,2,5,0,0,4,0,0,0,0,0,0,0
+40824,St. Agatha,Grieskirchen,Donauregion Oberösterreich,5,2,2,1,1,11,122.9,6,2,69,1,8,6,2,28.99,0,1,1,1,1,1,1,1,1,1,1,1
+40825,St. Georgen bei Grieskirchen,Grieskirchen,,2,1,0,0,0,1,11.1,2,0,0,0,2,3,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40827,Schlüßlberg,Grieskirchen,,2,1,1,1,1,2,14.4,3,3,98,0,3,3,2,10.2,0,0,0,0,0,0,0,0,0,0,0,0
+40828,Steegen,Grieskirchen,,0,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40829,Taufkirchen an der Trattnach,Grieskirchen,,3,1,1,1,1,2,16.9,2,3,0,0,5,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40830,Tollet,Grieskirchen,,8,2,2,2,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40831,Waizenkirchen,Grieskirchen,,7,2,2,2,2,0,0.0,10,2,5,1,2,3,0,400.0,1,0,0,0,0,0,0,0,0,0,0,0
+40832,Wallern an der Trattnach,Grieskirchen,Quellenviertel,5,0,0,0,0,8,83.1,9,10,165,39,50,6,8,0.0,13,14,2,1,10,0,0,0,1,0,0,0
+40833,Weibern,Grieskirchen,,2,0,0,0,0,1,9.9,2,1,0,1,4,3,2,,1,0,0,0,0,0,0,0,0,0,0,0
+40834,Wendling,Grieskirchen,,3,0,0,0,0,0,0.0,4,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+40835,Peuerbach,Grieskirchen,,11,2,2,2,2,13,107.4,11,3,0,15,17,11,8,,10,3,3,0,0,0,0,0,0,0,0,0
+40901,Edlbach,Kirchdorf an der Krems,360° ALPENLAND,0,0,0,0,0,0,0.0,5,13,418,2,13,7,7,0.0,1,2,1,1,0,0,0,0,0,0,0,0
+40902,Grünburg,Kirchdorf an der Krems,360° ALPENLAND,39,4,4,4,4,13,167.4,9,9,84,0,16,11,0,47.62,0,0,0,0,0,0,0,0,0,0,0,0
+40903,Hinterstoder,Kirchdorf an der Krems,360° ALPENLAND,6,0,0,0,0,75,903.0,20,72,2489,9,88,22,21,0.0,2,3,0,1,4,0,0,0,0,0,0,0
+40904,Inzersdorf im Kremstal,Kirchdorf an der Krems,360° ALPENLAND,1,0,0,0,0,4,39.8,8,6,110,1,11,9,1,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+40905,Kirchdorf an der Krems,Kirchdorf an der Krems,360° ALPENLAND,15,3,3,3,3,8,64.7,19,6,59,2,11,20,2,50.85,2,1,1,1,1,1,1,1,1,1,1,1
+40906,Klaus an der Pyhrnbahn,Kirchdorf an der Krems,360° ALPENLAND,10,2,2,2,2,21,501.9,7,13,243,4,18,5,3,8.23,3,2,1,1,1,1,1,1,1,1,1,1
+40907,Kremsmünster,Kirchdorf an der Krems,Region Wels,42,10,10,9,10,11,61.9,19,14,612,44,26,32,5,16.34,12,20,6,3,1,3,2,2,4,2,2,2
+40908,Micheldorf in Oberösterreich,Kirchdorf an der Krems,360° ALPENLAND,40,9,9,9,9,14,251.4,19,15,205,5,20,20,1,43.9,5,3,1,1,1,1,1,1,1,1,1,1
+40909,Molln,Kirchdorf an der Krems,360° ALPENLAND,22,2,2,2,2,49,729.7,11,15,156,9,28,4,1,12.82,4,3,2,1,0,0,0,0,0,0,0,0
+40910,Nußbach,Kirchdorf an der Krems,,5,0,0,0,0,0,0.0,4,4,92,0,5,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40911,Oberschlierbach,Kirchdorf an der Krems,,4,0,0,0,0,2,16.1,1,2,32,0,3,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40912,Pettenbach,Kirchdorf an der Krems,Salzkammergut,15,2,2,1,1,28,315.1,19,17,139,22,57,14,5,14.39,17,12,6,6,6,6,6,6,6,6,6,6
+40913,Ried im Traunkreis,Kirchdorf an der Krems,,7,1,0,1,1,0,0.0,3,1,7,0,0,0,0,142.86,0,0,0,0,0,0,0,0,0,0,0,0
+40914,Rosenau am Hengstpaß,Kirchdorf an der Krems,360° ALPENLAND,6,0,0,0,0,29,191.5,9,13,123,1,26,3,0,0.0,0,0,0,0,0,0,0,0,0,0,1,0
+40915,Roßleithen,Kirchdorf an der Krems,360° ALPENLAND,5,0,0,0,0,44,337.5,6,28,614,1,33,6,4,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+40916,St. Pankraz,Kirchdorf an der Krems,360° ALPENLAND,4,0,0,0,0,3,51.2,2,2,15,0,2,2,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40917,Schlierbach,Kirchdorf an der Krems,360° ALPENLAND,9,1,1,1,1,18,319.6,14,13,168,9,17,17,4,5.95,7,4,1,1,1,1,1,1,1,1,1,1
+40918,Spital am Pyhrn,Kirchdorf an der Krems,360° ALPENLAND,25,6,4,4,4,89,710.9,23,64,1516,26,112,33,7,3.96,11,13,5,4,5,3,3,5,3,3,3,3
+40919,Steinbach am Ziehberg,Kirchdorf an der Krems,Salzkammergut,5,0,0,0,0,1,5.2,1,1,10,0,3,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40920,Steinbach an der Steyr,Kirchdorf an der Krems,360° ALPENLAND,16,1,1,1,1,18,179.0,4,5,51,4,17,5,2,19.61,1,2,3,0,0,0,0,0,0,0,0,0
+40921,Vorderstoder,Kirchdorf an der Krems,360° ALPENLAND,3,0,0,0,0,41,336.7,4,26,419,6,46,6,3,0.0,5,3,2,2,2,2,2,2,2,2,2,2
+40922,Wartberg an der Krems,Kirchdorf an der Krems,,7,0,0,0,0,1,29.2,5,2,32,0,3,1,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+40923,Windischgarsten,Kirchdorf an der Krems,360° ALPENLAND,33,6,6,6,6,68,1074.7,13,26,562,29,58,23,6,10.68,18,9,5,2,2,3,2,2,2,2,3,2
+41001,Allhaming,Linz-Land,,3,0,0,0,0,0,0.0,1,2,29,0,2,0,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41002,Ansfelden,Linz-Land,Linz an der Donau,15,1,1,1,1,1,13.5,31,14,641,13,35,24,26,1.56,11,4,2,1,1,1,1,1,1,1,1,1
+41003,Asten,Linz-Land,,6,3,2,3,3,2,33.7,8,5,111,1,5,4,3,27.03,1,1,1,1,1,1,1,1,1,1,1,1
+41004,Eggendorf im Traunkreis,Linz-Land,,3,1,1,1,0,0,0.0,3,0,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41005,Enns,Linz-Land,Donauregion Oberösterreich,175,46,35,35,35,10,264.4,15,23,236,1,36,17,12,194.92,1,1,1,1,1,1,1,1,1,1,1,1
+41006,Hargelsberg,Linz-Land,,5,0,0,0,0,0,0.0,2,2,30,0,0,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41007,Hörsching,Linz-Land,,5,1,0,0,1,0,0.0,8,8,239,0,5,3,3,4.18,0,0,0,0,0,0,0,0,0,0,0,0
+41008,Hofkirchen im Traunkreis,Linz-Land,,4,0,0,0,0,0,0.0,2,1,36,0,2,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41009,Kematen an der Krems,Linz-Land,,5,2,2,2,2,0,0.0,3,2,63,0,3,1,0,31.75,0,0,0,0,0,0,0,0,0,0,0,0
+41010,Kirchberg-Thening,Linz-Land,,6,0,0,0,0,0,0.0,2,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41011,Kronstorf,Linz-Land,Donauregion Oberösterreich,10,5,5,4,4,6,53.9,7,5,104,9,14,10,2,48.08,7,2,0,0,0,0,0,0,0,0,0,0
+41012,Leonding,Linz-Land,,18,6,5,4,6,3,16.7,30,7,273,2,7,8,0,21.98,1,1,1,1,2,1,1,1,1,1,1,1
+41013,St. Florian,Linz-Land,Donauregion Oberösterreich,49,11,10,7,10,6,36.7,7,12,277,24,23,29,20,39.71,8,16,1,1,1,2,2,2,2,2,2,1
+41014,Neuhofen an der Krems,Linz-Land,,14,4,4,3,3,0,0.0,8,5,67,0,2,1,0,59.7,0,0,0,0,0,0,0,0,0,0,0,0
+41015,Niederneukirchen,Linz-Land,,2,0,0,0,0,0,0.0,3,1,0,1,2,2,0,,1,1,0,0,0,0,0,0,0,0,0,0
+41016,Oftering,Linz-Land,,4,1,0,0,0,0,0.0,1,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41017,Pasching,Linz-Land,,7,0,0,0,0,8,31.4,27,0,0,0,4,8,3,,0,0,0,0,0,0,0,0,0,0,0,0
+41019,Pucking,Linz-Land,,4,0,0,0,0,0,0.0,3,2,130,1,4,3,1,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+41020,St. Marien,Linz-Land,,7,0,0,0,0,0,0.0,4,1,0,0,0,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41021,Traun,Linz-Land,,12,2,1,2,2,0,0.0,2,3,65,0,1,2,0,30.77,0,0,0,0,0,0,0,0,0,0,0,0
+41022,Wilhering,Linz-Land,Donauregion Oberösterreich,13,0,0,0,0,7,175.9,11,7,82,2,21,13,9,0.0,0,1,0,0,1,0,0,0,0,0,0,0
+41101,Allerheiligen im Mühlkreis,Perg,Mühlviertel,1,1,1,1,1,1,1.8,1,1,5,1,1,2,0,200.0,1,0,0,0,0,0,0,0,0,0,0,0
+41102,Arbing,Perg,Mühlviertel,4,1,1,1,1,1,26.9,3,3,0,0,0,3,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41103,Baumgartenberg,Perg,Mühlviertel,4,0,0,0,0,1,9.4,3,2,10,0,2,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41104,Dimbach,Perg,Mühlviertel,3,1,1,1,1,5,55.3,1,1,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41105,Grein,Perg,Donauregion Oberösterreich|Mühlviertel,23,3,3,3,3,10,122.0,10,17,279,14,29,10,2,10.75,5,8,1,2,1,1,1,2,1,1,1,1
+41106,Katsdorf,Perg,Mühlviertel,4,0,0,0,0,6,68.8,5,1,10,0,1,5,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41107,Klam,Perg,Mühlviertel,6,3,3,3,3,2,23.3,1,4,32,0,2,1,0,93.75,0,0,0,0,0,0,0,0,0,0,0,0
+41108,Bad Kreuzen,Perg,Donauregion Oberösterreich|Mühlviertel,7,2,2,2,2,19,127.0,9,6,356,21,20,15,6,5.62,11,4,4,1,3,1,1,1,1,2,2,1
+41109,Langenstein,Perg,Mühlviertel,22,4,2,3,0,0,0.0,4,0,0,0,2,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41110,Luftenberg an der Donau,Perg,Mühlviertel,5,4,1,4,4,0,0.0,4,1,0,0,1,1,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41111,Mauthausen,Perg,Donauregion Oberösterreich|Mühlviertel,38,7,6,6,7,6,119.8,22,11,255,6,28,20,2,27.45,3,3,2,1,1,1,1,1,1,1,1,1
+41112,Mitterkirchen im Machland,Perg,Donauregion Oberösterreich|Mühlviertel,4,0,0,0,0,3,25.2,6,6,58,2,16,5,10,0.0,0,2,0,0,0,0,0,0,0,0,0,0
+41113,Münzbach,Perg,Mühlviertel,9,2,2,2,0,4,44.6,2,1,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41114,Naarn im Machlande,Perg,Donauregion Oberösterreich|Mühlviertel,10,4,4,2,3,12,360.1,9,9,164,5,21,9,4,24.39,3,1,0,0,0,0,1,0,1,0,0,0
+41115,Pabneukirchen,Perg,Mühlviertel,5,1,1,0,0,3,46.3,7,4,64,1,10,6,4,15.62,0,1,0,0,0,0,0,0,0,0,0,0
+41116,Perg,Perg,Donauregion Oberösterreich|Mühlviertel,20,3,3,3,2,12,245.4,38,10,181,22,31,34,20,16.57,18,6,2,2,2,2,1,1,1,1,1,1
+41117,Rechberg,Perg,Mühlviertel,3,1,1,1,1,8,263.6,2,7,99,0,13,4,2,10.1,0,0,0,0,0,0,0,0,0,0,0,0
+41118,Ried in der Riedmark,Perg,Mühlviertel,12,2,2,2,1,1,29.4,3,0,0,2,1,4,0,,1,1,0,0,0,0,0,0,0,0,0,0
+41119,St. Georgen am Walde,Perg,Mühlviertel,2,0,0,0,0,12,327.6,5,4,32,1,7,5,1,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+41120,St. Georgen an der Gusen,Perg,Mühlviertel,18,2,2,2,2,1,18.4,5,0,0,0,2,3,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41121,St. Nikola an der Donau,Perg,Donauregion Oberösterreich|Mühlviertel,17,6,6,5,6,1,5.7,2,4,27,0,5,0,0,222.22,0,0,0,0,0,0,0,0,0,0,0,0
+41122,St. Thomas am Blasenstein,Perg,Mühlviertel,7,3,3,0,3,11,94.2,2,4,18,1,14,7,1,166.67,0,1,0,0,0,0,0,0,0,0,0,0
+41123,Saxen,Perg,Mühlviertel,7,2,2,1,2,1,7.5,3,6,50,0,3,2,1,40.0,0,0,0,0,0,0,0,0,0,0,0,0
+41124,Schwertberg,Perg,Donauregion Oberösterreich|Mühlviertel,10,4,4,2,3,3,44.7,6,6,148,3,7,7,4,27.03,3,0,0,0,0,0,0,0,0,0,0,0
+41125,Waldhausen im Strudengau,Perg,Donauregion Oberösterreich|Mühlviertel,13,4,3,3,3,17,145.5,7,9,86,6,26,13,5,46.51,4,3,0,0,0,0,0,0,0,0,0,0
+41126,Windhaag bei Perg,Perg,Mühlviertel,13,5,5,5,5,6,111.5,2,3,11,0,9,2,1,454.55,0,0,0,0,0,0,0,0,0,0,0,0
+41201,Andrichsfurt,Ried im Innkreis,,5,0,0,0,0,3,16.0,2,0,0,0,4,5,3,,0,0,0,0,0,0,0,0,0,0,0,0
+41202,Antiesenhofen,Ried im Innkreis,,2,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41203,Aurolzmünster,Ried im Innkreis,,5,2,2,2,2,0,0.0,1,3,39,4,3,2,3,51.28,3,4,3,3,3,3,3,3,3,3,3,3
+41204,Eberschwang,Ried im Innkreis,,3,0,0,0,0,0,0.0,4,2,16,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41205,Eitzing,Ried im Innkreis,,2,0,0,0,0,2,10.6,0,0,0,0,0,0,2,,0,0,0,0,0,0,0,0,0,0,0,0
+41206,Geiersberg,Ried im Innkreis,,3,0,0,0,0,2,44.7,3,1,4,0,1,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41207,Geinberg,Ried im Innkreis,Quellenviertel,3,0,0,0,0,10,534.4,6,11,515,10,22,13,6,0.0,4,4,0,0,0,0,0,1,1,0,0,0
+41208,Gurten,Ried im Innkreis,,2,0,0,0,0,3,13.9,2,2,19,0,1,1,3,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41209,Hohenzell,Ried im Innkreis,,3,2,2,2,0,1,5.8,4,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41210,Kirchdorf am Inn,Ried im Innkreis,Quellenviertel,2,1,1,1,1,3,9.6,5,6,33,4,14,8,1,30.3,0,2,0,0,1,0,0,1,0,0,0,0
+41211,Kirchheim im Innkreis,Ried im Innkreis,Quellenviertel,2,0,0,0,0,6,90.2,7,4,55,3,13,11,5,0.0,3,2,2,2,2,2,2,2,2,2,2,2
+41212,Lambrechten,Ried im Innkreis,,3,0,0,0,0,0,0.0,4,1,11,0,1,1,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41213,Lohnsburg am Kobernaußerwald,Ried im Innkreis,Quellenviertel,2,0,0,0,0,12,69.2,6,5,35,2,14,7,0,0.0,2,1,1,1,1,1,1,1,1,1,1,1
+41214,Mehrnbach,Ried im Innkreis,,2,0,0,0,0,0,0.0,1,1,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41215,Mettmach,Ried im Innkreis,Quellenviertel,6,1,1,0,0,15,91.0,4,4,86,10,24,5,0,11.63,4,5,1,0,0,0,0,0,0,0,0,0
+41216,Mörschwang,Ried im Innkreis,,2,1,1,0,0,4,15.9,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41217,Mühlheim am Inn,Ried im Innkreis,Quellenviertel,2,0,0,0,0,3,21.2,1,4,38,0,8,1,3,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41218,Neuhofen im Innkreis,Ried im Innkreis,,3,0,0,0,0,3,22.1,2,1,30,0,2,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41219,Obernberg am Inn,Ried im Innkreis,Quellenviertel,29,1,1,1,1,2,7.7,10,6,83,4,12,14,3,12.05,3,1,0,0,0,0,0,0,0,0,0,0
+41220,Ort im Innkreis,Ried im Innkreis,Quellenviertel,5,0,0,0,0,4,25.7,6,4,47,2,7,8,1,0.0,1,0,0,0,0,0,0,0,1,0,0,0
+41221,Pattigham,Ried im Innkreis,,1,0,0,0,0,4,26.4,1,1,5,0,4,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41223,Pramet,Ried im Innkreis,Quellenviertel,5,1,1,0,1,4,47.0,1,2,2,0,7,0,0,500.0,0,0,0,0,0,0,0,0,0,0,0,0
+41224,Reichersberg,Ried im Innkreis,Quellenviertel,15,2,1,1,2,4,43.2,3,4,131,4,8,7,0,15.27,4,2,2,1,1,1,1,1,1,1,1,1
+41225,Ried im Innkreis,Ried im Innkreis,Quellenviertel,40,5,5,5,5,16,1612.8,71,24,742,273,125,240,23,6.74,132,71,55,55,41,17,10,10,12,9,9,7
+41226,St. Georgen bei Obernberg am Inn,Ried im Innkreis,,2,1,1,0,0,2,13.8,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41227,St. Marienkirchen am Hausruck,Ried im Innkreis,,3,0,0,0,0,1,132.0,1,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41228,St. Martin im Innkreis,Ried im Innkreis,,5,1,1,1,1,2,17.4,3,2,2,0,5,1,0,500.0,0,0,0,0,0,0,0,0,0,0,0,0
+41229,Schildorn,Ried im Innkreis,,1,0,0,0,0,7,44.7,2,1,0,0,10,2,5,,0,0,0,0,0,0,0,0,0,0,0,0
+41230,Senftenbach,Ried im Innkreis,,2,0,0,0,0,2,8.5,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41231,Taiskirchen im Innkreis,Ried im Innkreis,,4,0,0,0,0,4,105.5,5,0,0,0,5,2,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41232,Tumeltsham,Ried im Innkreis,,1,0,0,0,0,1,16.5,8,2,49,0,4,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41233,Utzenaich,Ried im Innkreis,,3,0,0,0,0,2,24.5,3,1,0,0,2,2,2,,0,0,0,0,0,0,0,0,0,0,0,0
+41234,Waldzell,Ried im Innkreis,Quellenviertel,2,0,0,0,0,8,95.5,5,3,45,3,12,8,0,0.0,2,1,0,0,0,0,0,0,0,0,0,0
+41235,Weilbach,Ried im Innkreis,,2,0,0,0,0,0,0.0,1,2,16,0,3,1,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41236,Wippenham,Ried im Innkreis,,2,0,0,0,0,4,24.5,1,0,0,0,5,1,2,,0,0,0,0,0,0,0,0,0,0,0,0
+41304,Altenfelden,Rohrbach,Mühlviertel,3,1,0,0,0,9,140.1,7,2,62,2,9,15,1,16.13,2,0,0,0,0,0,0,0,0,0,0,0
+41305,Arnreit,Rohrbach,Mühlviertel,1,0,0,0,0,3,33.1,3,0,0,0,3,3,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41306,Atzesberg,Rohrbach,Mühlviertel,0,0,0,0,0,0,0.0,0,1,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41307,Auberg,Rohrbach,Mühlviertel,2,0,0,0,0,2,18.0,1,2,10,0,4,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41309,Haslach an der Mühl,Rohrbach,Mühlviertel,86,24,24,24,24,9,123.7,12,13,144,16,26,15,2,166.67,6,5,5,7,5,5,5,4,3,3,3,3
+41311,Hörbich,Rohrbach,Mühlviertel,3,1,1,0,1,0,0.0,0,2,16,0,2,0,0,62.5,0,0,0,0,0,0,0,0,0,0,0,0
+41312,Hofkirchen im Mühlkreis,Rohrbach,Donauregion Oberösterreich|Mühlviertel,15,6,6,3,6,9,63.6,5,4,52,1,12,4,0,115.38,0,1,0,0,0,0,0,0,0,0,0,0
+41313,Julbach,Rohrbach,Mühlviertel,3,0,0,0,0,8,400.9,2,6,43,0,7,2,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41314,Kirchberg ob der Donau,Rohrbach,Donauregion Oberösterreich|Mühlviertel,7,1,1,1,1,5,51.5,6,5,97,2,16,7,5,10.31,0,1,0,0,0,0,0,0,0,0,0,0
+41315,Klaffer am Hochficht,Rohrbach,Mühlviertel,4,0,0,0,0,17,229.6,5,13,356,5,21,4,3,0.0,1,1,0,0,1,0,1,1,1,1,2,1
+41316,Kleinzell im Mühlkreis,Rohrbach,Donauregion Oberösterreich|Mühlviertel,16,3,2,2,2,6,48.0,1,2,26,1,5,2,2,115.38,1,0,0,0,0,0,0,0,0,0,0,0
+41317,Kollerschlag,Rohrbach,Mühlviertel,1,0,0,0,0,14,565.9,5,2,192,11,6,5,1,0.0,4,3,1,1,0,0,0,1,0,0,1,0
+41318,Lembach im Mühlkreis,Rohrbach,Donauregion Oberösterreich|Mühlviertel,6,0,0,0,0,7,74.2,9,5,97,3,9,9,3,0.0,2,1,0,0,0,0,0,0,0,0,0,0
+41319,Lichtenau im Mühlkreis,Rohrbach,Mühlviertel,3,1,1,1,1,0,0.0,1,2,56,0,3,1,1,17.86,0,0,0,0,0,0,0,0,0,0,0,0
+41320,Nebelberg,Rohrbach,Mühlviertel,0,0,0,0,0,4,81.3,1,1,47,0,2,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41321,Neufelden,Rohrbach,Mühlviertel,53,6,6,5,5,4,46.2,6,4,115,2,11,10,0,52.17,1,1,0,0,0,0,0,0,0,0,1,0
+41322,Niederkappel,Rohrbach,Donauregion Oberösterreich|Mühlviertel,3,0,0,0,0,9,69.9,4,3,28,1,10,4,0,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+41323,Niederwaldkirchen,Rohrbach,Mühlviertel,9,3,3,3,0,0,0.0,3,2,21,0,1,0,0,142.86,0,0,0,0,0,0,0,0,0,0,0,0
+41324,Oberkappel,Rohrbach,Donauregion Oberösterreich|Mühlviertel,1,0,0,0,0,10,284.8,2,2,19,5,10,2,1,0.0,2,1,2,0,0,0,0,0,0,0,0,0
+41325,Oepping,Rohrbach,Mühlviertel,3,1,1,1,1,0,0.0,6,4,18,0,5,6,3,55.56,0,0,0,0,0,0,0,0,0,0,0,0
+41326,Peilstein im Mühlviertel,Rohrbach,Mühlviertel,5,1,1,1,1,6,61.0,3,8,75,1,12,2,3,13.33,1,0,0,0,0,0,0,0,0,0,0,0
+41327,Pfarrkirchen im Mühlkreis,Rohrbach,Donauregion Oberösterreich|Mühlviertel,8,1,1,0,1,11,175.7,5,6,56,1,20,10,1,17.86,0,1,0,0,0,0,0,0,0,0,0,0
+41328,Putzleinsdorf,Rohrbach,Mühlviertel,5,0,0,0,0,0,0.0,4,1,6,0,1,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41329,Neustift im Mühlkreis,Rohrbach,Donauregion Oberösterreich|Mühlviertel,3,1,1,1,1,14,297.7,5,11,182,0,28,11,3,5.49,0,0,0,0,0,0,0,0,0,0,0,0
+41331,St. Johann am Wimberg,Rohrbach,Mühlviertel,3,0,0,0,0,8,487.4,4,4,97,1,9,6,0,0.0,0,1,0,1,1,1,0,1,0,1,1,0
+41332,St. Martin im Mühlkreis,Rohrbach,Donauregion Oberösterreich|Mühlviertel,8,2,2,2,2,12,513.4,7,3,35,3,13,15,4,57.14,3,2,0,0,0,0,0,0,0,0,0,0
+41333,St. Oswald bei Haslach,Rohrbach,Mühlviertel,2,0,0,0,0,6,97.3,1,1,10,1,4,1,0,0.0,1,0,0,0,0,0,0,0,0,0,0,0
+41334,St. Peter am Wimberg,Rohrbach,Mühlviertel,2,0,0,0,0,7,198.6,4,2,31,0,6,6,2,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41336,St. Ulrich im Mühlkreis,Rohrbach,Mühlviertel,1,0,0,0,0,5,104.7,2,2,48,0,5,1,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41337,St. Veit im Mühlkreis,Rohrbach,Mühlviertel,5,2,2,2,2,5,27.6,2,1,8,0,2,1,0,250.0,0,0,0,0,0,0,0,0,0,0,0,0
+41338,Sarleinsbach,Rohrbach,Donauregion Oberösterreich|Mühlviertel,18,3,3,3,2,4,56.9,4,4,46,4,16,8,7,65.22,3,1,0,0,0,0,0,0,0,0,0,0
+41341,Schwarzenberg am Böhmerwald,Rohrbach,Mühlviertel,3,0,0,0,0,21,514.5,6,21,248,15,25,8,3,0.0,9,4,4,2,2,1,1,1,1,3,1,1
+41342,Ulrichsberg,Rohrbach,Mühlviertel,5,0,0,0,0,37,1962.5,14,31,903,2,38,6,4,0.0,2,0,0,0,0,0,0,0,0,0,0,0
+41343,Aigen-Schlägl,Rohrbach,Mühlviertel,21,5,5,4,5,69,3319.3,11,21,694,47,41,25,7,7.2,7,8,11,11,8,12,12,7,9,8,6,2
+41344,Rohrbach-Berg,Rohrbach,Mühlviertel,31,4,4,4,4,20,188.4,25,20,156,20,40,21,6,25.64,7,2,2,1,3,1,0,0,0,0,0,0
+41345,Helfenberg,Rohrbach,Mühlviertel,6,2,2,1,2,6,190.8,4,3,48,0,6,3,0,41.67,0,0,0,0,0,0,0,0,0,0,0,0
+41346,St. Stefan-Afiesl,Rohrbach,Mühlviertel,1,0,0,0,0,31,1149.2,6,9,285,6,16,12,9,0.0,1,1,1,1,0,1,0,0,0,0,1,1
+41401,Altschwendt,Schärding,,2,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41402,Andorf,Schärding,Donauregion Oberösterreich,8,2,2,2,2,15,297.4,15,8,200,15,26,19,5,10.0,6,8,2,0,0,1,0,0,0,0,0,0
+41403,Brunnenthal,Schärding,,8,1,1,1,1,0,0.0,2,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41404,Diersbach,Schärding,,1,0,0,0,0,0,0.0,6,3,15,0,1,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41405,Dorf an der Pram,Schärding,,5,0,0,0,0,0,0.0,3,0,0,1,1,2,0,,1,0,0,0,0,0,0,0,0,0,0,0
+41406,Eggerding,Schärding,,3,1,1,1,0,0,0.0,5,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41407,Engelhartszell,Schärding,Donauregion Oberösterreich,11,3,3,2,3,28,392.2,15,8,200,12,49,20,11,15.0,6,6,0,0,0,0,0,0,0,0,0,0
+41408,Enzenkirchen,Schärding,,4,1,1,1,0,4,33.6,3,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41409,Esternberg,Schärding,,7,1,1,0,0,1,15.8,2,1,0,0,2,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41410,Freinberg,Schärding,Donauregion Oberösterreich,4,0,0,0,0,11,63.7,5,6,46,2,16,9,3,0.0,1,1,0,0,0,0,0,0,0,0,0,0
+41411,Kopfing im Innkreis,Schärding,Donauregion Oberösterreich,5,1,1,0,1,10,84.6,6,4,134,7,18,8,4,7.46,4,3,0,0,0,0,0,0,0,0,0,0
+41412,Mayrhof,Schärding,,1,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41413,Münzkirchen,Schärding,,4,0,0,0,0,0,0.0,6,1,12,0,1,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41414,Raab,Schärding,,27,3,3,3,0,7,48.1,9,0,0,1,8,5,1,,1,0,0,0,0,0,0,0,0,0,0,0
+41415,Rainbach im Innkreis,Schärding,,3,0,0,0,0,0,0.0,3,0,0,2,0,1,0,,1,1,0,0,0,0,0,0,0,0,0,0
+41416,Riedau,Schärding,,2,0,0,0,0,0,0.0,1,1,16,0,2,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41417,St. Aegidi,Schärding,,3,0,0,0,0,16,172.0,3,2,27,1,11,4,1,0.0,1,1,1,1,1,1,1,1,1,1,1,1
+41418,St. Florian am Inn,Schärding,,3,0,0,0,0,1,3.5,2,2,19,0,1,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41419,St. Marienkirchen bei Schärding,Schärding,,2,0,0,0,0,9,56.0,3,1,8,0,3,5,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41420,St. Roman,Schärding,,4,1,0,0,0,0,0.0,5,2,8,0,0,1,0,125.0,0,0,0,0,0,0,0,0,0,0,0,0
+41421,St. Willibald,Schärding,,2,0,0,0,0,1,14.7,2,1,14,8,0,0,0,0.0,1,3,0,1,0,1,1,0,0,0,0,1
+41422,Schärding,Schärding,Donauregion Oberösterreich,146,21,21,21,21,25,1371.5,44,26,772,24,68,61,28,27.2,16,12,1,1,2,1,1,1,1,1,1,1
+41423,Schardenberg,Schärding,,7,2,1,1,2,0,0.0,3,3,14,0,2,2,0,142.86,0,0,0,0,0,0,0,0,0,0,0,0
+41424,Sigharting,Schärding,,2,1,1,1,1,4,15.3,2,0,0,1,0,0,0,,1,0,0,0,0,0,0,0,0,0,0,0
+41425,Suben,Schärding,,5,2,2,2,2,0,0.0,6,3,87,0,1,0,0,22.99,0,0,0,0,0,0,0,0,0,0,0,0
+41426,Taufkirchen an der Pram,Schärding,,4,0,0,0,0,8,77.2,6,2,0,0,6,6,2,,0,0,0,0,0,0,0,0,0,0,0,0
+41427,Vichtenstein,Schärding,Donauregion Oberösterreich,4,1,1,1,1,7,36.8,3,4,33,0,12,4,2,30.3,0,0,0,0,0,0,0,0,0,0,0,0
+41428,Waldkirchen am Wesen,Schärding,Donauregion Oberösterreich,5,2,2,1,2,5,47.1,6,5,141,0,13,8,7,14.18,0,0,0,0,0,0,0,0,0,0,0,0
+41429,Wernstein am Inn,Schärding,Donauregion Oberösterreich,7,2,2,1,2,1,14.5,3,3,80,3,4,3,2,25.0,2,0,0,0,0,0,0,0,0,0,1,0
+41430,Zell an der Pram,Schärding,,6,1,1,1,1,5,36.7,5,2,106,14,7,14,3,9.43,2,2,1,0,1,2,1,0,0,4,0,0
+41501,Adlwang,Steyr-Land,360° ALPENLAND,6,2,2,1,1,3,18.4,3,1,8,3,2,3,0,250.0,2,2,0,0,0,0,0,0,0,0,0,0
+41502,Aschach an der Steyr,Steyr-Land,,3,0,0,0,0,1,39.2,2,3,16,0,5,2,1,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41503,Bad Hall,Steyr-Land,360° ALPENLAND,26,4,4,4,4,43,1748.9,36,20,595,52,62,56,6,6.72,28,25,10,8,6,7,6,5,5,5,5,4
+41504,Dietach,Steyr-Land,360° ALPENLAND,6,2,2,2,1,1,6.2,9,3,190,2,6,7,1,10.53,2,0,0,0,0,0,0,0,0,0,0,0
+41505,Gaflenz,Steyr-Land,360° ALPENLAND,6,0,0,0,0,28,332.7,6,9,255,1,24,4,2,0.0,0,0,0,0,0,0,0,1,0,0,0,0
+41506,Garsten,Steyr-Land,,16,3,3,3,3,0,0.0,6,3,16,1,2,5,0,187.5,1,1,1,1,1,1,1,1,1,1,1,1
+41507,Großraming,Steyr-Land,360° ALPENLAND,10,1,1,1,1,46,660.2,12,23,360,2,38,12,4,2.78,0,1,0,1,0,0,0,0,0,0,0,0
+41508,Laussa,Steyr-Land,360° ALPENLAND,3,0,0,0,0,18,171.5,4,10,173,11,16,4,1,0.0,4,7,0,0,0,0,0,0,0,0,0,0
+41509,Losenstein,Steyr-Land,360° ALPENLAND,10,2,2,1,2,24,299.7,7,10,292,4,16,7,2,6.85,3,1,0,0,0,0,0,0,0,0,0,0
+41510,Maria Neustift,Steyr-Land,360° ALPENLAND,2,1,0,0,0,23,283.4,7,4,60,0,9,4,0,16.67,0,0,0,0,0,0,0,0,0,0,0,0
+41511,Pfarrkirchen bei Bad Hall,Steyr-Land,360° ALPENLAND,13,3,3,3,3,0,0.0,3,1,0,4,5,7,0,,4,1,0,0,0,0,0,0,0,0,0,0
+41512,Reichraming,Steyr-Land,360° ALPENLAND,14,3,3,3,3,87,2060.1,8,10,124,7,28,7,3,24.19,3,1,0,0,0,2,1,0,0,0,0,1
+41513,Rohr im Kremstal,Steyr-Land,,3,0,0,0,0,2,16.5,2,3,0,0,2,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41514,St. Ulrich bei Steyr,Steyr-Land,360° ALPENLAND,2,0,0,0,0,15,342.4,5,4,35,0,3,5,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41515,Schiedlberg,Steyr-Land,,1,0,0,0,0,0,0.0,2,1,0,0,0,1,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41516,Sierning,Steyr-Land,,17,1,1,1,1,0,0.0,9,4,127,0,1,0,0,7.87,0,0,0,0,0,0,0,0,0,0,0,0
+41517,Ternberg,Steyr-Land,360° ALPENLAND,12,4,4,4,4,51,556.8,13,7,161,3,21,10,1,24.84,2,1,0,0,0,0,0,0,0,0,0,0
+41518,Waldneukirchen,Steyr-Land,,14,0,0,0,0,2,13.4,4,0,0,0,1,4,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41521,Wolfern,Steyr-Land,,11,1,1,0,0,0,0.0,4,1,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41522,Weyer,Steyr-Land,360° ALPENLAND,74,5,5,2,3,50,836.3,17,19,330,53,59,14,4,15.15,25,21,3,3,2,2,2,3,2,2,2,1
+41601,Alberndorf in der Riedmark,Urfahr-Umgebung,Mühlviertel,5,2,2,0,1,26,251.4,8,3,17,3,9,8,1,117.65,1,1,0,0,0,0,0,0,0,1,0,0
+41602,Altenberg bei Linz,Urfahr-Umgebung,Mühlviertel,4,0,0,0,0,4,127.5,5,2,62,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41603,Bad Leonfelden,Urfahr-Umgebung,Mühlviertel,20,2,2,2,2,90,3940.8,20,14,980,19,54,55,11,2.04,17,8,6,4,4,4,3,3,3,3,3,3
+41604,Eidenberg,Urfahr-Umgebung,Donauregion Oberösterreich|Mühlviertel,1,1,1,1,1,10,58.8,4,5,83,0,17,3,4,12.05,0,0,0,0,0,0,0,0,0,0,0,0
+41605,Engerwitzdorf,Urfahr-Umgebung,Mühlviertel,4,2,1,1,1,10,156.0,5,4,109,0,4,3,2,18.35,0,0,0,0,0,0,0,0,0,0,0,0
+41606,Feldkirchen an der Donau,Urfahr-Umgebung,Donauregion Oberösterreich|Mühlviertel,16,6,5,1,6,12,91.7,13,20,162,14,36,20,11,37.04,7,4,2,0,0,2,0,0,0,0,0,0
+41607,Gallneukirchen,Urfahr-Umgebung,Mühlviertel,11,0,0,0,0,21,440.2,16,3,5,51,16,18,11,0.0,14,7,4,3,1,3,3,5,1,0,2,3
+41609,Gramastetten,Urfahr-Umgebung,Mühlviertel,7,1,1,1,1,1,15.4,7,3,0,0,7,2,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41610,Haibach im Mühlkreis,Urfahr-Umgebung,Mühlviertel,1,0,0,0,0,1,261.8,0,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41611,Hellmonsödt,Urfahr-Umgebung,Mühlviertel,7,2,2,2,1,17,263.9,8,1,34,0,15,14,2,58.82,0,0,0,0,0,0,0,0,0,0,0,0
+41612,Herzogsdorf,Urfahr-Umgebung,Mühlviertel,6,0,0,0,0,10,70.0,5,1,0,0,6,5,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41613,Kirchschlag bei Linz,Urfahr-Umgebung,Linz an der Donau|Mühlviertel,5,1,1,0,1,8,662.4,3,15,175,2,11,2,6,5.71,1,0,1,0,0,0,0,0,0,0,0,0
+41614,Lichtenberg,Urfahr-Umgebung,Mühlviertel,1,0,0,0,0,0,0.0,7,1,4,0,1,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41615,Oberneukirchen,Urfahr-Umgebung,Mühlviertel,15,5,4,5,2,38,725.0,6,3,81,3,10,8,2,61.73,3,2,2,2,2,2,2,2,2,2,2,2
+41616,Ottenschlag im Mühlkreis,Urfahr-Umgebung,Mühlviertel,0,0,0,0,0,23,926.0,0,3,23,2,14,13,0,0.0,2,2,1,0,0,0,0,0,0,0,0,0
+41617,Ottensheim,Urfahr-Umgebung,Donauregion Oberösterreich|Mühlviertel,53,3,3,3,3,6,80.1,17,6,18,2,22,11,3,166.67,1,1,2,1,1,1,1,1,1,1,1,1
+41618,Puchenau,Urfahr-Umgebung,Mühlviertel,9,3,3,3,3,0,0.0,6,1,0,0,4,6,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41619,Reichenau im Mühlkreis,Urfahr-Umgebung,Mühlviertel,5,1,1,1,1,4,103.1,6,1,50,0,2,6,1,20.0,0,0,0,0,0,0,0,0,0,0,0,0
+41620,Reichenthal,Urfahr-Umgebung,Mühlviertel,8,1,1,1,1,7,67.1,3,2,2,0,9,8,3,500.0,0,0,0,0,0,0,0,0,0,0,0,0
+41621,St. Gotthard im Mühlkreis,Urfahr-Umgebung,Mühlviertel,13,3,1,0,2,0,0.0,0,1,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41622,Schenkenfelden,Urfahr-Umgebung,Mühlviertel,9,2,2,2,0,1,33.8,2,0,0,0,2,2,2,,0,0,0,0,0,0,0,0,0,0,0,0
+41623,Sonnberg im Mühlkreis,Urfahr-Umgebung,Mühlviertel,0,0,0,0,0,0,0.0,1,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41624,Steyregg,Urfahr-Umgebung,Donauregion Oberösterreich|Mühlviertel,10,7,7,7,5,7,46.0,12,5,208,3,9,14,4,33.65,2,3,2,0,0,0,0,0,0,0,0,0
+41626,Walding,Urfahr-Umgebung,Mühlviertel,6,1,0,0,0,0,0.0,4,1,0,0,3,3,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41627,Zwettl an der Rodl,Urfahr-Umgebung,Mühlviertel,11,0,0,0,0,2,119.8,4,2,45,0,6,2,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41628,Vorderweißenbach,Urfahr-Umgebung,Mühlviertel,9,0,0,0,0,18,680.4,5,10,343,4,12,7,4,0.0,2,1,0,0,0,0,0,2,0,0,0,0
+41701,Ampflwang im Hausruckwald,Vöcklabruck,Quellenviertel,3,0,0,0,0,34,543.7,9,9,616,0,40,9,11,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41702,Attersee am Attersee,Vöcklabruck,Salzkammergut,15,3,3,3,3,16,324.4,19,38,404,27,78,41,10,7.43,19,16,3,3,3,4,3,3,3,3,3,3
+41703,Attnang-Puchheim,Vöcklabruck,Quellenviertel,12,2,2,2,2,5,28.7,10,12,83,8,26,16,7,24.1,6,2,1,1,2,1,1,1,1,1,1,1
+41704,Atzbach,Vöcklabruck,,7,1,0,1,0,1,2.0,3,0,0,0,2,1,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41705,Aurach am Hongar,Vöcklabruck,Salzkammergut,3,0,0,0,0,4,27.7,2,7,15,1,10,2,1,0.0,0,1,0,0,0,0,0,0,0,0,0,0
+41706,Berg im Attergau,Vöcklabruck,Salzkammergut,2,1,1,1,1,4,31.4,4,15,447,2,19,4,0,2.24,2,0,0,0,0,0,0,0,0,0,0,0
+41707,Desselbrunn,Vöcklabruck,,5,1,1,0,1,0,0.0,2,2,58,0,2,1,2,17.24,0,0,0,0,0,0,0,0,0,0,0,0
+41708,Fornach,Vöcklabruck,,1,0,0,0,0,0,0.0,2,3,75,0,4,1,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41709,Frankenburg am Hausruck,Vöcklabruck,Quellenviertel,9,3,2,2,2,8,108.2,7,6,62,1,21,7,1,48.39,0,0,0,0,0,0,0,0,1,1,0,0
+41710,Frankenmarkt,Vöcklabruck,Salzkammergut,12,1,1,1,1,6,92.3,8,8,96,3,19,9,1,10.42,2,1,0,0,0,0,0,0,0,0,0,0
+41711,Gampern,Vöcklabruck,Salzkammergut,5,2,0,1,1,1,13.1,1,2,21,3,6,4,0,95.24,1,2,0,0,0,0,0,0,0,0,0,0
+41712,Innerschwand am Mondsee,Vöcklabruck,Salzkammergut,3,0,0,0,0,13,123.5,4,24,237,0,33,9,7,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41713,Lenzing,Vöcklabruck,Salzkammergut,4,0,0,0,0,3,12.1,9,6,287,2,15,11,4,0.0,2,2,2,2,2,2,2,2,2,2,2,2
+41714,Manning,Vöcklabruck,,0,0,0,0,0,0,0.0,2,1,5,0,2,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41715,Mondsee am Mondsee,Vöcklabruck,Salzkammergut,29,11,9,9,9,67,1748.8,46,50,533,69,126,103,39,20.64,35,27,11,7,9,2,5,3,8,6,3,2
+41716,Neukirchen an der Vöckla,Vöcklabruck,Quellenviertel,8,1,1,1,1,12,140.4,7,5,51,12,28,11,9,19.61,5,6,3,3,4,3,3,3,6,3,3,3
+41717,Niederthalheim,Vöcklabruck,,5,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41718,Nußdorf am Attersee,Vöcklabruck,Salzkammergut,3,1,1,1,1,14,114.0,16,37,376,23,67,33,1,2.66,9,16,3,3,2,2,2,3,2,2,2,1
+41719,Oberhofen am Irrsee,Vöcklabruck,Salzkammergut,7,2,2,1,2,6,220.7,6,12,111,3,21,8,4,18.02,2,3,2,2,0,0,0,0,0,0,0,0
+41720,Oberndorf bei Schwanenstadt,Vöcklabruck,,0,0,0,0,0,0,0.0,1,3,0,0,0,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41721,Oberwang bei Mondsee,Vöcklabruck,Salzkammergut,4,0,0,0,0,4,21.9,6,8,40,2,20,8,5,0.0,2,0,0,0,0,0,0,0,0,0,0,0
+41722,Ottnang am Hausruck,Vöcklabruck,,9,0,0,0,0,0,0.0,2,1,16,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41723,Pfaffing,Vöcklabruck,,3,0,0,0,0,0,0.0,3,0,0,0,2,2,1,,0,0,0,0,0,0,0,0,0,0,0,0
+41724,Pilsbach,Vöcklabruck,,0,0,0,0,0,1,3.7,0,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41725,Pitzenberg,Vöcklabruck,,2,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41726,Pöndorf,Vöcklabruck,,2,0,0,0,0,0,0.0,4,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41727,Puchkirchen am Trattberg,Vöcklabruck,,3,0,0,0,0,0,0.0,2,2,40,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41728,Pühret,Vöcklabruck,,0,0,0,0,0,0,0.0,0,1,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41729,Redleiten,Vöcklabruck,,0,0,0,0,0,0,0.0,2,1,35,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41730,Redlham,Vöcklabruck,,0,0,0,0,0,2,9.4,0,0,0,0,2,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41731,Regau,Vöcklabruck,,7,1,1,1,1,0,0.0,7,2,82,1,5,2,2,12.2,1,1,1,1,1,1,1,1,1,1,1,1
+41732,Rüstorf,Vöcklabruck,,3,0,0,0,0,0,0.0,2,1,20,0,0,2,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41733,Rutzenham,Vöcklabruck,,1,0,0,0,0,0,0.0,2,0,0,0,2,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41734,St. Georgen im Attergau,Vöcklabruck,Salzkammergut,18,5,5,5,5,18,232.7,27,26,386,29,69,49,5,12.95,18,10,9,9,6,7,9,6,6,6,6,6
+41735,St. Lorenz am Mondsee,Vöcklabruck,Salzkammergut,2,0,0,0,0,24,191.9,10,44,447,19,62,25,14,0.0,10,11,1,1,1,1,0,0,0,0,0,0
+41736,Schlatt,Vöcklabruck,,2,0,0,0,0,0,0.0,1,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41737,Schörfling am Attersee,Vöcklabruck,Salzkammergut,16,0,0,0,0,14,113.7,12,19,90,15,44,38,8,0.0,7,6,1,2,1,2,1,1,1,1,2,1
+41738,Schwanenstadt,Vöcklabruck,Quellenviertel,14,3,3,3,3,5,200.4,21,9,40,4,31,22,10,75.0,4,4,2,2,2,2,2,2,2,2,2,2
+41739,Seewalchen am Attersee,Vöcklabruck,Salzkammergut,20,2,1,2,2,11,366.1,22,17,147,57,64,64,20,13.61,34,21,11,9,8,11,9,9,9,9,9,9
+41740,Steinbach am Attersee,Vöcklabruck,Salzkammergut,6,1,1,1,1,37,582.7,14,43,445,16,73,19,7,2.25,5,9,2,1,2,1,1,2,3,2,1,1
+41741,Straß im Attergau,Vöcklabruck,Salzkammergut,1,0,0,0,0,9,62.2,6,17,328,3,26,8,3,0.0,3,1,1,1,1,1,1,1,1,1,1,1
+41742,Tiefgraben am Mondsee,Vöcklabruck,Salzkammergut,6,1,1,1,1,22,193.3,11,59,729,6,83,24,15,1.37,5,3,1,1,0,0,0,0,0,0,0,0
+41743,Timelkam,Vöcklabruck,,18,5,2,3,4,3,60.0,14,6,18,0,8,2,1,277.78,0,0,0,0,0,0,0,0,0,0,0,0
+41744,Ungenach,Vöcklabruck,,2,0,0,0,0,0,0.0,4,2,25,0,2,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41745,Unterach am Attersee,Vöcklabruck,Salzkammergut,6,0,0,0,0,20,226.5,15,37,229,21,70,39,8,0.0,13,10,8,6,6,7,7,6,6,6,7,6
+41746,Vöcklabruck,Vöcklabruck,Quellenviertel,88,4,4,4,4,17,220.9,39,13,333,73,68,63,38,12.01,25,23,14,11,13,11,9,8,8,7,9,9
+41747,Vöcklamarkt,Vöcklabruck,Salzkammergut,12,3,3,2,3,10,112.0,14,6,73,4,25,12,9,41.1,4,1,1,1,1,1,1,1,1,1,1,1
+41748,Weißenkirchen im Attergau,Vöcklabruck,Salzkammergut,1,0,0,0,0,1,3.2,2,1,0,1,5,1,0,,1,0,0,0,0,0,0,0,0,0,0,0
+41749,Weyregg am Attersee,Vöcklabruck,Salzkammergut,6,3,3,3,3,18,266.2,17,48,332,16,75,32,6,9.04,10,7,1,1,0,0,0,0,0,0,0,0
+41750,Wolfsegg am Hausruck,Vöcklabruck,Quellenviertel,2,1,1,1,1,10,95.7,5,5,47,8,23,4,6,21.28,7,0,0,0,0,0,1,0,0,0,0,0
+41751,Zell am Moos am Irrsee,Vöcklabruck,Salzkammergut,6,0,0,0,0,6,120.0,4,29,273,10,34,10,5,0.0,7,6,2,3,1,1,1,0,1,1,1,1
+41752,Zell am Pettenfirst,Vöcklabruck,Quellenviertel,1,0,0,0,0,2,9.6,5,1,17,0,7,4,4,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41802,Bachmanning,Wels-Land,,1,0,0,0,0,0,0.0,1,0,0,0,1,0,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41803,Bad Wimsbach-Neydharting,Wels-Land,Salzkammergut,10,3,3,2,3,28,558.0,7,8,79,10,20,19,1,37.97,5,7,1,1,1,1,1,1,1,1,1,1
+41804,Buchkirchen,Wels-Land,,4,1,1,0,0,0,0.0,4,1,8,0,0,1,1,125.0,0,0,0,0,0,0,0,0,0,0,0,0
+41805,Eberstalzell,Wels-Land,Salzkammergut,3,0,0,0,0,0,0.0,5,1,66,0,1,5,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41806,Edt bei Lambach,Wels-Land,Salzkammergut,1,1,1,0,0,1,4.5,1,1,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41807,Fischlham,Wels-Land,,8,1,1,1,0,4,25.9,2,0,0,5,0,0,0,,4,1,0,1,1,1,1,1,1,1,1,3
+41808,Gunskirchen,Wels-Land,,11,5,3,0,1,0,0.0,10,2,0,0,1,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41810,Krenglbach,Wels-Land,,2,1,0,1,0,0,0.0,5,0,0,0,2,2,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41811,Lambach,Wels-Land,Salzkammergut,28,1,1,1,1,1,24.7,10,3,0,0,8,7,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41812,Marchtrenk,Wels-Land,,5,0,0,0,0,2,128.5,28,6,325,0,3,1,2,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41813,Neukirchen bei Lambach,Wels-Land,,2,0,0,0,0,0,0.0,2,2,34,0,2,2,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41814,Offenhausen,Wels-Land,,5,2,2,1,2,0,0.0,3,2,34,0,1,3,0,58.82,0,0,0,0,0,0,0,0,0,0,0,0
+41815,Pennewang,Wels-Land,,5,0,0,0,0,0,0.0,3,0,0,0,2,3,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41816,Pichl bei Wels,Wels-Land,,4,0,0,0,0,8,97.8,5,5,34,0,16,13,2,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41817,Sattledt,Wels-Land,Region Wels,3,0,0,0,0,9,71.3,5,8,384,0,10,4,2,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41818,Schleißheim,Wels-Land,,6,2,0,2,0,0,0.0,2,0,0,0,1,1,0,,0,0,0,0,0,0,0,0,0,0,0,0
+41819,Sipbachzell,Wels-Land,,1,0,0,0,0,0,0.0,4,3,8,0,5,3,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0
+41820,Stadl-Paura,Wels-Land,Salzkammergut,14,4,4,4,4,1,3.6,5,2,37,3,7,6,1,108.11,2,1,0,0,0,0,0,0,0,0,0,0
+41821,Steinerkirchen an der Traun,Wels-Land,Salzkammergut,5,2,2,2,1,1,17.9,5,0,0,1,2,5,0,,1,0,0,0,0,0,0,0,0,0,0,0
+41822,Steinhaus,Wels-Land,,8,4,3,2,3,0,0.0,3,5,92,0,5,3,0,43.48,0,0,0,0,0,0,0,0,0,0,0,0
+41823,Thalheim bei Wels,Wels-Land,,15,5,5,3,5,0,0.0,7,3,16,7,7,11,6,312.5,5,2,0,1,1,0,0,0,0,0,0,0
+41824,Weißkirchen an der Traun,Wels-Land,,3,0,0,0,0,0,0.0,2,0,0,0,0,0,0,,0,0,0,0,0,0,0,0,0,0,0,0

@@ -7,6 +7,14 @@ from retry_requests import retry
 # Link to explore the data set:
 # https://open-meteo.com/en/docs/geosphere-austria-api?hourly=temperature_2m,weather_code
 
+# Open-Meteo's CC BY 4.0 licence requires this credit wherever the data is shown.
+ATTRIBUTION = {
+    "name": "Open-Meteo (GeoSphere Austria)",
+    "url": "https://open-meteo.com/en/docs/geosphere-austria-api",
+    "licence": "CC BY 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+}
+
 
 def data(
     latitude: float, longitude: float, past_days: int, forecast_days: 5
@@ -121,4 +129,5 @@ def summary(hourly: pd.DataFrame) -> dict[str, object]:
             "precipitation_probability": _number(current["precipitation_probability"]),
         },
         "days": days,
+        "source": ATTRIBUTION,
     }

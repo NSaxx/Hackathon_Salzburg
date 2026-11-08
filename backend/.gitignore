@@ -2,6 +2,7 @@
 */**/__pycache__/*
 env/
 .cache.sqlite
+.env
 
 # directory containing data sets
 /dataset/

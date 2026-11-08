@@ -1,0 +1,604 @@
+place_id,alert_id,title,alert_type,valid_from,valid_until,open_ended,active_on_snapshot
+tourdata_hotel_100124,186539,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_100481,191107,Betriebsurlaub,IN,2026-11-01,2026-11-24,False,True
+tourdata_hotel_100598,129366,Akutmeldung/Information,IN,,,True,True
+tourdata_hotel_100690,190571,Betriebsurlaub,IN,,,True,True
+tourdata_hotel_100702,184100,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_100734,190420,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_101018,148938,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-20,2026-12-27,False,False
+tourdata_hotel_101070,184085,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_101146,148937,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2027-01-02,False,False
+tourdata_hotel_101224,188339,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_101602,184107,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_101614,129373,Akutmeldung/Information,IN,,,True,True
+tourdata_hotel_101764,184157,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_102016,190908,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-06,False,False
+tourdata_hotel_102039,129377,Akutmeldung/Information,IN,,,True,True
+tourdata_hotel_102196,190904,Öffnungszeiten während der Weihnachtsfeiertage,IN,2026-12-22,2027-01-06,False,False
+tourdata_hotel_102315,184108,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_102358,190909,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-06,False,False
+tourdata_hotel_102399,190910,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-10,False,False
+tourdata_hotel_102761,184097,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_103049,175104,Betriebsurlaub,IN,,2027-05-01,False,True
+tourdata_hotel_103153,148919,Umbauarbeiten,IN,,,True,True
+tourdata_hotel_103206,142021,Betriebsurlaub,IN,2026-09-21,2026-11-15,False,True
+tourdata_hotel_103429,184194,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_103578,184187,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_103669,129387,Akutmeldung/Information,IN,,,True,True
+tourdata_hotel_103696,129388,Betriebsurlaub,IN,2026-02-06,2026-11-18,False,True
+tourdata_hotel_103894,184183,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_103914,190638,Betriebsurlaub,IN,,2027-04-22,False,True
+tourdata_hotel_103914,138473,NEU!!!,IN,2026-05-22,,True,True
+tourdata_hotel_103980,190916,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-06,False,False
+tourdata_hotel_150002,185825,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000015,190088,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000122,184126,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000134,184197,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000153,153489,Ausgebucht,IN,,,True,True
+tourdata_hotel_430000181,184155,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000182,188353,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000185,184195,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000354,129397,Akutmeldung/Information,IN,,,True,True
+tourdata_hotel_430000392,129398,Akutmeldung/Information,IN,2026-10-23,2027-03-25,False,True
+tourdata_hotel_430000456,129399,Akutmeldung/Information,IN,,2028-04-30,False,True
+tourdata_hotel_430000663,184101,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000734,191109,Betriebsurlaub,IN,2026-11-03,2026-11-18,False,True
+tourdata_hotel_430000881,184109,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000935,184090,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000948,187425,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430000973,184125,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430001019,184134,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430001039,185949,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430001091,184149,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430001097,184151,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430001126,151086,Vorübergehend geschlossen!,IN,2025-02-12,,True,True
+tourdata_hotel_430001248,170855,Betriebsurlaub November,IN,,2026-11-16,False,True
+tourdata_hotel_430001269,138489,Betriebsurlaub - Winter geschlossen,IN,2026-09-17,2027-05-01,False,True
+tourdata_hotel_430010793,190903,Öffnungszeiten während der Weihnachtsfeiertage,IN,2026-12-22,2027-01-06,False,False
+tourdata_hotel_430010933,184153,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430011067,175562,2026 wegen Umbau geschlossen,SP,2025-11-11,2026-12-31,False,True
+tourdata_hotel_430011171,143850,Buchungszeitraum,IN,2024-10-31,,True,True
+tourdata_hotel_430011293,188885,Seminar-Herbstaktion 2026,IN,,2026-12-31,False,True
+tourdata_hotel_430016921,191035,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-06,False,False
+tourdata_hotel_430017613,190177,Betriebsurlaub,IN,,,True,True
+tourdata_hotel_430018182,184106,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430018370,148940,Geschlossen,IN,2026-12-24,2026-12-26,False,False
+tourdata_hotel_430018561,184121,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430019348,190917,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2026-12-31,False,False
+tourdata_hotel_430019354,184124,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430019434,184096,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430019489,184185,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430019493,184094,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430020275,184129,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430020294,184087,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430020393,129413,Akutmeldung/Information,IN,,,True,True
+tourdata_hotel_430021173,190690,Vorübergehend geschlossen,IN,2026-10-12,,True,True
+tourdata_hotel_430022159,184104,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430022338,184184,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430023439,184143,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430023475,129418,Akutmeldung/Sperre,SP,,,True,True
+tourdata_hotel_430023523,184132,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430023555,184130,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430023660,184084,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430023660,184180,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430023707,184140,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430026735,184200,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430026813,190137,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430027061,184182,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430027150,184156,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430027170,129420,Akutmeldung/Information,IN,2024-10-31,,True,True
+tourdata_hotel_430027197,184137,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430027199,184123,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430027202,184136,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430027390,191097,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-11-07,2027-01-06,False,False
+tourdata_hotel_430028567,184098,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430028633,184093,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430028871,184086,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430028884,184141,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430028895,187348,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430028954,184133,Akutmeldung/Info,IN,,,True,True
+tourdata_hotel_430028954,190110,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430028954,190102,Geschlossen,IN,,2027-01-05,False,True
+tourdata_hotel_430029111,184083,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430029393,184139,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430029402,184122,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430030487,184081,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430030550,184145,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430030742,188228,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430031240,184082,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430031418,184138,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430031550,184199,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430031606,184732,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430031723,184131,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430031749,184103,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430032789,190906,Öffnungszeiten während der Weihnachtsfeiertage,IN,2026-12-21,2027-01-04,False,False
+tourdata_hotel_430032932,184731,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033009,185727,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033019,185781,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033021,184510,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033045,184065,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033073,190905,Winterpause,SP,2026-12-31,2027-01-24,False,False
+tourdata_hotel_430033183,187136,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033247,187563,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033247,187577,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033254,187570,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033341,189209,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033382,190416,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_hotel_430033411,191098,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_gastro_100101,171854,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-25,2026-12-31,False,False
+tourdata_gastro_100354,190590,WILD BUFFET,IN,2026-10-01,2026-11-27,False,True
+tourdata_gastro_100385,187766,Umbauarbeiten Zimmer - Wirtshaus geöffnet!,IN,,,True,True
+tourdata_gastro_100528,129424,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_100600,129427,Akutmeldung/Information,IN,,,True,True
+tourdata_gastro_100633,170807,Akutmeldung/Info,IN,,2026-11-30,False,True
+tourdata_gastro_100670,129431,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_100999,190592,Betriebsurlaub,IN,2026-10-24,2026-11-12,False,True
+tourdata_gastro_101032,129435,Hütte geschlossen,IN,,,True,True
+tourdata_gastro_101164,186735,Öffnungszeiten,IN,2026-04-28,2026-12-01,False,True
+tourdata_gastro_101482,143423,Betriebsurlaub,IN,,2026-11-16,False,True
+tourdata_gastro_101482,179945,Restaurant - Öffnungszeiten,IN,,,True,True
+tourdata_gastro_101676,129441,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_102062,142444,Öffnungszeiten während der Weihnachtsfeiertage,IN,2024-12-24,2026-12-31,False,True
+tourdata_gastro_102233,129450,Akutmeldung/Information,IN,,2028-04-30,False,True
+tourdata_gastro_102297,190472,Betriebsurlaub,IN,2027-01-15,2027-02-15,False,False
+tourdata_gastro_102638,190552,Dauerhaft geschlossen ab 31.12.2026,IN,2026-12-31,,True,False
+tourdata_gastro_102831,177119,Geschlossen bis 21. Mai 2026,IN,,2026-11-21,False,True
+tourdata_gastro_102876,188848,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2026-12-31,False,False
+tourdata_gastro_102877,129464,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_102919,142441,Restaurant nur bei Schiliftbetrieb geöffnet,IN,,,True,True
+tourdata_gastro_103297,185778,Betriebsurlaub,IN,2026-09-22,2026-12-25,False,True
+tourdata_gastro_103733,190637,Winterpause,IN,,2027-05-01,False,True
+tourdata_gastro_103746,132324,Öffnungszeiten bei Regenwetter,IN,,,True,True
+tourdata_gastro_103783,129474,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_103825,171558,Akutmeldung/Info,IN,2026-09-01,2027-05-01,False,True
+tourdata_gastro_103896,184119,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_gastro_103913,152067,Betriebsurlaub,IN,,2026-11-18,False,True
+tourdata_gastro_103998,190636,Betriebsurlaub,IN,,2026-12-01,False,True
+tourdata_gastro_160259,129483,Akutmeldung/Information,IN,,,True,True
+tourdata_gastro_430000154,136761,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2027-01-01,False,False
+tourdata_gastro_430000155,190591,Saisonschluss 2026,IN,,,True,True
+tourdata_gastro_430000224,191106,Betriebsurlaub,IN,2024-11-01,2026-11-24,False,True
+tourdata_gastro_430000400,190719,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_gastro_430000628,187591,Gastronomiebetrieb derzeit geschlossen,SP,2026-06-04,,True,True
+tourdata_gastro_430000761,132317,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430000769,132316,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430000775,129492,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430000909,129497,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430001012,186461,Eingeschränkter Betrieb,EG,2026-04-21,,True,True
+tourdata_gastro_430003513,129500,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430003867,171679,Öffnungszeiten über die Weihnachtsfeiertage,EG,2026-12-22,2027-01-01,False,False
+tourdata_gastro_430003885,129501,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430005238,175090,Winterpause,IN,,2027-03-31,False,True
+tourdata_gastro_430006078,136751,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-10,False,False
+tourdata_gastro_430006232,142040,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2027-01-02,False,False
+tourdata_gastro_430006624,143699,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-21,2027-01-01,False,False
+tourdata_gastro_430006625,171695,Öffnungszeiten über die Weihnachtsfeiertage,EG,2026-12-23,2027-01-01,False,False
+tourdata_gastro_430006625,190688,"Wild, Enten und Gänse",IN,2026-10-11,2026-11-14,False,True
+tourdata_gastro_430006628,190982,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2026-12-24,False,False
+tourdata_gastro_430006639,142047,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-06,False,False
+tourdata_gastro_430006641,171697,Öffnungszeiten über die Weihnachtsfeiertage,EG,2026-12-21,2027-01-13,False,False
+tourdata_gastro_430006646,172868,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-08,2027-01-01,False,False
+tourdata_gastro_430006651,142051,Öffnungszeiten während der Weihnachtsfeiertage,IN,2026-12-22,2027-01-10,False,False
+tourdata_gastro_430006879,171674,Öffnungszeiten über die Weihnachtsfeiertage,EG,2027-11-19,2027-02-07,False,False
+tourdata_gastro_430007256,129517,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430007268,190272,Betriebsurlaub 2. - 11. November | Allerheiligen geöffnet!!,IN,,2026-11-12,False,True
+tourdata_gastro_430007715,176882,Öffnungszeiten über die Weihnachtsfeiertage,EG,2026-12-24,2027-01-05,False,False
+tourdata_gastro_430007750,184171,Akutmeldung/Info,IN,,2026-11-04,False,True
+tourdata_gastro_430007895,129524,Betriebsurlaub,IN,,2026-11-15,False,True
+tourdata_gastro_430007961,176880,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-23,2027-01-06,False,False
+tourdata_gastro_430008075,129529,Akutmeldung/Information,IN,,,True,True
+tourdata_gastro_430008206,190941,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-25,2026-12-27,False,False
+tourdata_gastro_430008585,171621,Winterpause,IN,,2027-06-01,False,True
+tourdata_gastro_430008635,179946,Wir sind im Urlaub,IN,2026-11-01,2026-11-17,False,True
+tourdata_gastro_430008773,153502,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-24,2026-12-28,False,False
+tourdata_gastro_430008981,186388,Babypause,IN,,,True,True
+tourdata_gastro_430009001,191096,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-11-07,2026-12-01,False,False
+tourdata_gastro_430009010,142039,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-01,2027-01-10,False,False
+tourdata_gastro_430009438,179893,BETRIEBSURLAUB,IN,2026-01-06,,True,True
+tourdata_gastro_430009513,132314,Öffnungszeiten,IN,,,True,True
+tourdata_gastro_430009649,151726,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-01,2027-01-06,False,False
+tourdata_gastro_430009702,172869,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-08,2027-01-01,False,False
+tourdata_gastro_430009765,171678,Öffnungszeiten über die Weihnachtsfeiertage,EG,2026-12-19,2027-01-06,False,False
+tourdata_gastro_430010092,155681,Öffnungszeiten über die Weihnachtsfeiertage,IN,2026-12-21,2026-12-31,False,False
+tourdata_gastro_430010222,190282,Betriebsurlaub,SP,2026-11-16,2026-12-13,False,False
+tourdata_gastro_430010222,190283,Betriebsurlaub,SP,2026-12-24,2026-12-25,False,False
+tourdata_gastro_430010287,190911,Öffnungszeiten über die Weihnachtszeit,IN,2026-11-15,2026-12-21,False,False
+tourdata_gastro_430010366,171878,Öffnungszeiten über die Weihnachtsfeiertage,EG,2026-12-24,2027-01-11,False,False
+tourdata_gastro_430010478,178271,Winterpause,SP,2026-12-24,2027-01-24,False,False
+tourdata_gastro_430010558,188714,Änderungen Öffnungszeiten,IN,2026-11-02,2026-11-17,False,True
+tourdata_gastro_430010635,190699,Betriebsurlaub,IN,2026-11-02,2026-12-10,False,True
+tourdata_tour_100043,190900,Forstliches Sperrgebiet,SP,2026-10-20,2026-11-13,False,True
+tourdata_tour_100056,190901,Forstliches Sperrgebiet,SP,2026-10-16,2026-11-13,False,True
+tourdata_tour_100080,129652,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_100081,189977,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_100145,170782,Parkmöglichkeit nur für Bahnkunden,IN,,,True,True
+tourdata_tour_100262,129655,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_100284,138291,Sperre Helenental,SP,2026-08-27,,True,True
+tourdata_tour_100362,170784,Parkmöglichkeit nur für Bahnkunden,IN,,,True,True
+tourdata_tour_100438,190623,Wegumlegung wegen Brückensanierung in Unterweißenbach,IN,2026-10-01,2026-11-22,False,True
+tourdata_tour_430000164,129662,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000205,190317,Teilsperre Oberranna-Weg,TS,,2027-03-01,False,True
+tourdata_tour_430000259,153802,Sperre von Mittich/Mattau bis Tennisplatz Neuhaus a.Inn,SP,2025-01-20,2027-06-30,False,True
+tourdata_tour_430000271,129663,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000295,129664,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000393,129666,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000407,153803,Sperre von Mittich/Mattau bis Tennisplatz Neuhaus a.Inn,SP,2025-01-20,2027-06-30,False,True
+tourdata_tour_430000559,129674,Information Streckenführung CZ,IN,,,True,True
+tourdata_tour_430000559,188257,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430000686,184902,Informationen zum Waldbachstrub,IN,,,True,True
+tourdata_tour_430000722,129678,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000723,129679,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000755,133542,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430000758,189971,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430000761,133543,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430000767,133464,Pumpspeicherkraftwerk Sonnstein,SP,2024-05-10,,True,True
+tourdata_tour_430000821,133541,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430000881,129683,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430000895,190624,Wegumlegung wegen Brückensanierung in Unterweißenbach,IN,2026-10-01,2026-11-22,False,True
+tourdata_tour_430000935,153652,SPERRE! 21.5. - Mitte Juni,SP,2025-05-20,,True,True
+tourdata_tour_430000945,132767,Aufarbeitungsarbeiten Windwurfschäden,IN,,,True,True
+tourdata_tour_430001009,189881,Sprengarbeiten beim Gipsbergbau „Fuchsalm“,TS,,,True,True
+tourdata_tour_430001095,129693,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430001145,187226,Sperre Ursprungweg entlang des Schwarzenbaches,SP,2026-05-19,,True,True
+tourdata_tour_430001148,129699,Akutmeldung/Sperre,IN,,,True,True
+tourdata_tour_430001243,129706,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430001277,188655,Sperre & Umleitung am Kremstalradweg,SP,2026-07-06,2027-12-31,False,True
+tourdata_tour_430001302,153047,Achtung Stufen: Allerheiligenbrücke/Doblbach in Schärding,IN,,,True,True
+tourdata_tour_430001302,190943,Brückensperrung am Innradweg bei Windshausen,SP,2026-10-22,2027-12-31,False,True
+tourdata_tour_430001302,139981,Sperre,TS,,,True,True
+tourdata_tour_430001302,190129,SRK Brückensperre Jenbach Notburgasteg,SP,2026-09-07,2026-12-14,False,True
+tourdata_tour_430001302,187702,Tschuppbachweg gesperrt,SP,2026-06-12,,True,True
+tourdata_tour_430001310,129708,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430001491,133667,Hütte,IN,,,True,True
+tourdata_tour_430001496,191074,Sperre des Panoramawegs im Bereich Bibergraben (Kopie),TS,,2027-04-15,False,True
+tourdata_tour_430001496,191076,Sperre Panoramaweg Gosau Bereich Bibergraben,SP,2026-10-30,2027-04-30,False,True
+tourdata_tour_430001521,149233,Salzsteig409 Bereich Kruckenbrettl,SP,2022-10-31,,True,True
+tourdata_tour_430001533,152690,Sperre,SP,2024-12-03,,True,True
+tourdata_tour_430001609,129716,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430001611,129717,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430001633,129718,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430001651,138292,Sperre Helenental,SP,2026-08-27,,True,True
+tourdata_tour_430001652,189959,Sperre Helenental,SP,2026-08-27,,True,True
+tourdata_tour_430001682,129719,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430001884,191075,Sperre Panoramaweg Gosau Bereich Bibergraben,SP,2026-10-30,2027-04-30,False,True
+tourdata_tour_430001894,190276,Nutzung auf eigene Gefahr,IN,,,True,True
+tourdata_tour_430001895,190279,Nutzung auf eigene Gefahr,IN,,,True,True
+tourdata_tour_430001897,190280,Nutzung auf eigene Gefahr,IN,,,True,True
+tourdata_tour_430001898,190281,Nutzung auf eigene Gefahr,IN,,,True,True
+tourdata_tour_430001913,190213,Sperre wegen Seilbruch,SP,2026-09-07,2026-12-31,False,True
+tourdata_tour_430001914,129722,Nutzung auf eigene Gefahr,IN,,,True,True
+tourdata_tour_430001938,129733,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002025,129736,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002026,129737,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002028,129739,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002092,129740,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002114,188262,Achtung kleine Wegumlegung nach dem Moor! den Markierungen folgen,IN,,,True,True
+tourdata_tour_430002128,188284,Achtung Wegumlegung Bereich Talstation Lift Richtung Oberlaimbach! den Markierungen folgen,IN,,,True,True
+tourdata_tour_430002129,188270,Achtung Wegumlegung bei Grasslmühle! den Markierungen folgen,IN,,,True,True
+tourdata_tour_430002130,188266,"Achtung Wegumlegung nach ""Traxl""! den Markierungen folgen",IN,,,True,True
+tourdata_tour_430002148,133500,Bitte beachten Sie den Hinweis,IN,,,True,True
+tourdata_tour_430002166,137754,Sperre Narzissenbad - Leisling Runde,SP,2024-08-19,,True,True
+tourdata_tour_430002191,190984,Teilsperre,TS,2026-10-24,2026-11-28,False,True
+tourdata_tour_430002199,184709,Lawinengefahr,IN,2026-02-27,,True,True
+tourdata_tour_430002206,129743,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002265,189960,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430002265,189973,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430002265,189966,Sperre Helenental,SP,2026-08-27,,True,True
+tourdata_tour_430002283,129744,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002285,129745,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002286,129746,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002288,129747,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002289,129748,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002290,129749,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002315,141994,Traunbrücke aufgrund Baustellenarbeiten nicht befahrbar,IN,2024-02-05,,True,True
+tourdata_tour_430002319,141995,Traunbrücke aufgrund Baustellenarbeiten nicht befahrbar,IN,2024-02-05,,True,True
+tourdata_tour_430002406,149429,Salzsteig409 Bereich Kruckenbrettl,SP,2022-10-31,,True,True
+tourdata_tour_430002425,130874,Vorläufige Wegsperre,SP,2026-11-02,,True,True
+tourdata_tour_430002449,190216,"Sperre Forststrasse ""Brendt-Gscheid""",SP,,,True,True
+tourdata_tour_430002470,129755,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002497,129757,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002515,190316,Sperre Donauradweg R1 im Bereich Brandstatt,TS,,2026-11-16,False,True
+tourdata_tour_430002515,190413,Sperre Donauradweg R1 im Bereich Langer Haufen,TS,,2027-03-01,False,True
+tourdata_tour_430002516,170421,Donauradweg R1 Südufer,TS,,2028-04-13,False,True
+tourdata_tour_430002539,186384,Öffentliche Anreise,IN,2026-04-14,2026-12-13,False,True
+tourdata_tour_430002539,190980,Sperre Hauergrabensteg,TS,,,True,True
+tourdata_tour_430002574,152501,Straßensanierung Lange Graben Straße,TS,2025-04-10,,True,True
+tourdata_tour_430002589,129760,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002624,129761,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002625,141728,Beschädigung der Strecke,IN,2024-10-02,,True,True
+tourdata_tour_430002627,129762,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430002694,190863,Sperre Luegstraße,SP,2026-10-19,2026-11-08,False,True
+tourdata_tour_430002754,129765,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430002799,139976,Umleitung wegen Straßenarbeiten,IN,,,True,True
+tourdata_tour_430002871,189783,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430002873,139876,Sperre Brücke Pührmühle,SP,2024-09-22,,True,True
+tourdata_tour_430002898,153804,Sperre von Mittich/Mattau bis Tennisplatz Neuhaus a.Inn,SP,2025-01-20,2027-06-30,False,True
+tourdata_tour_430002946,137083,Radtour 1 ist digital aufbereitet,IN,,,True,True
+tourdata_tour_430003005,137085,Rennradtour 2 ist digital aufbereitet,IN,,,True,True
+tourdata_tour_430003006,137087,Radtour 3 ist digital aufbereitet,IN,,,True,True
+tourdata_tour_430003008,137088,Radtour 5 ist digital aufbereitet,IN,,,True,True
+tourdata_tour_430003150,133466,Pumpspeicherkraftwerk Sonnstein,SP,2024-05-10,,True,True
+tourdata_tour_430003153,129774,Information freigegebene Zeiten,IN,,,True,True
+tourdata_tour_430005572,131623,Umleitung wegen Bau der S10,IN,2024-02-06,2027-05-06,False,True
+tourdata_tour_430005588,188255,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430005697,129780,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430005703,129781,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430005731,186385,Sperre Hauergrabensteg im Bereich Scharnstein/Grünau im Almtal,IN,2026-04-14,,True,True
+tourdata_tour_430005745,129782,Spiel-APP,IN,,,True,True
+tourdata_tour_430005746,129783,Spiel-APP,IN,,,True,True
+tourdata_tour_430005747,129784,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430005763,169796,Bikepark Wurbauerkogel,IN,,,True,True
+tourdata_tour_430005764,169794,Bikepark Wurbauerkogel,IN,,,True,True
+tourdata_tour_430005765,169795,Bikepark Wurbauerkogel,IN,,,True,True
+tourdata_tour_430005778,129785,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430005929,129791,Akutmeldung/Sperre,SP,,2028-08-31,False,True
+tourdata_tour_430005929,133467,Pumpspeicherkraftwerk Sonnstein,SP,2024-05-10,,True,True
+tourdata_tour_430006036,129795,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430006042,129796,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430006044,129797,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430006071,129798,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430006245,189968,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430006249,129806,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430006250,129807,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430006261,129808,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430006266,129809,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430006365,129815,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430006390,170290,Achtung! Aktueller Status Klettersteige Dachstein-Gipfel,SP,2026-05-01,,True,True
+tourdata_tour_430006546,152568,Buchsteinrunde Etappe 1 (St. Gallen - Palfau),SP,2025-04-15,,True,True
+tourdata_tour_430006900,189969,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430006903,189970,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430006904,189972,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430006905,190100,Sperre,SP,2026-08-31,,True,True
+tourdata_tour_430006907,189967,Sperre,SP,2026-08-27,,True,True
+tourdata_tour_430006934,189195,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430006978,170783,Parkmöglichkeit nur für Bahnkunden,IN,,,True,True
+tourdata_tour_430006998,129821,Information,IN,,,True,True
+tourdata_tour_430007016,141998,Traunbrücke aufgrund Baustellenarbeiten nicht befahrbar,TS,2024-02-05,,True,True
+tourdata_tour_430007101,139033,Umleitung wegen Straßenarbeiten,IN,,,True,True
+tourdata_tour_430007119,133469,Pumpspeicherkraftwerk Sonnstein,SP,2024-05-10,,True,True
+tourdata_tour_430007163,190596,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430007185,137017,Wanderweg ist Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007187,137018,Wanderweg ist Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007188,132580,asfinag Tunnelbau Vierzehn,SP,2024-01-01,,True,True
+tourdata_tour_430007190,188260,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430007228,190582,Sperre Sebaldusweg Bereich Dornberweg Gaflenz,SP,2026-09-28,2026-11-30,False,True
+tourdata_tour_430007241,190597,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430007280,186473,Holzfiguren Erneuerung,IN,2026-04-23,,True,True
+tourdata_tour_430007282,132077,Achtung,IN,,,True,True
+tourdata_tour_430007288,129838,Information freigegebene Zeiten,IN,,,True,True
+tourdata_tour_430007321,189784,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007333,189204,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007387,129839,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430007388,129840,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430007449,133276,Lessern: Sperre Wegabschnitt Naturlehrpfad,SP,2023-06-21,,True,True
+tourdata_tour_430007449,137759,Sperre Narzissenbad - Leisling Runde,SP,2024-08-19,,True,True
+tourdata_tour_430007457,190595,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430007487,129843,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430007552,133544,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007553,133540,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007554,133547,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007555,133557,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007558,133552,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007559,133558,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007561,189208,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007563,189785,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007565,181114,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007572,186430,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007575,133553,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007576,133559,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007577,133554,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430007582,190841,Sperre Göblbergturm,SP,,,True,True
+tourdata_tour_430007679,190846,Sperre Aussichtsturm Göblberg,SP,,,True,True
+tourdata_tour_430007684,129833,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430007698,129844,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430007711,129845,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430007721,129846,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430007872,139874,Sperre Brücke Pührmühle,TS,2024-09-22,,True,True
+tourdata_tour_430007885,133275,Gröbming: Umleitung Spitalsgraben - Route G8,SP,2024-03-22,,True,True
+tourdata_tour_430007885,187505,Sperre Passeckweg,SP,2026-11-01,2027-03-31,False,True
+tourdata_tour_430007896,188258,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430007897,188350,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430007995,143485,Beschilderung wird überarbeitet,IN,,,True,True
+tourdata_tour_430007995,188256,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430008024,129847,Akutmeldung/Sperre,SP,,,True,True
+tourdata_tour_430008050,188352,Weg-Sperre von Montag bis Freitag,TS,,2026-11-30,False,True
+tourdata_tour_430008214,129849,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430008224,189202,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008230,190584,Temporäre Routenänderung ab 05. Oktober 2026,TS,2026-10-05,,True,True
+tourdata_tour_430008236,131624,Umleitung wegen Bau der S10,IN,2024-02-06,2027-05-06,False,True
+tourdata_tour_430008311,188565,Fussgängerbrücke Haus,SP,2026-07-17,2027-04-30,False,True
+tourdata_tour_430008312,152571,Buchsteinrunde Etappe 1 (St. Gallen - Palfau),SP,2025-04-15,,True,True
+tourdata_tour_430008312,152572,Buchsteinrunde Etappe 2 - Palfau - Johnsbach,SP,2025-04-15,,True,True
+tourdata_tour_430008426,184710,Lawinengefahr,IN,2026-02-27,,True,True
+tourdata_tour_430008427,184711,Lawinengefahr,IN,2026-02-27,,True,True
+tourdata_tour_430008454,190842,Sperre Göblberg Aussichtsturm,SP,,,True,True
+tourdata_tour_430008455,190843,Sperre Göblberg Aussichtsturm,SP,,,True,True
+tourdata_tour_430008542,133556,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008547,190840,Sperre Göblbergturm,SP,,,True,True
+tourdata_tour_430008554,129857,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008555,129858,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008556,129859,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008557,129860,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008558,129861,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008560,129865,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430008607,190604,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430008608,190603,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430008609,190606,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430008612,190605,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430008668,189203,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008734,129868,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430008771,137760,Sperre Narzissenbad - Leisling Runde,SP,2024-08-19,,True,True
+tourdata_tour_430008771,190601,SPERRE: Bergtour auf den Sandling,SP,2026-09-30,2026-11-10,False,True
+tourdata_tour_430008774,129872,Akutmeldung/Information,IN,,,True,True
+tourdata_tour_430008837,129873,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430008894,129874,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430008901,169783,Felssturz im Graben am Wanderweg zur Burg Altpernstein,SP,2025-07-22,,True,True
+tourdata_tour_430008922,190845,Sperre Aussichtsturm Göblberg,SP,,,True,True
+tourdata_tour_430008978,187093,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430008997,139977,Umleitung wegen Straßenarbeiten,IN,,,True,True
+tourdata_tour_430009019,188277,Achtung Wegumlegung Bereich Talstation Lift Richtung Oberlaimbach! den Markierungen folgen,IN,,,True,True
+tourdata_tour_430009022,188274,"Achtung Wegumlegung ""Grasslmühle! den Markierungen folgen",IN,,,True,True
+tourdata_tour_430009023,188265,"Achtung Wegumlegung nach ""Traxl""! den Markierungen folgen",IN,,,True,True
+tourdata_tour_430009183,187092,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009184,187091,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009188,186985,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009190,188250,Wanderweg Sperre aufgrund der S10 Baustelle,SP,,,True,True
+tourdata_tour_430009192,188253,Wanderweg Sperre aufgrund S10 Baustelle,SP,,,True,True
+tourdata_tour_430009193,188254,Wanderweg Sperre aufgrund S10 Baustelle,SP,,,True,True
+tourdata_tour_430009234,133232,asfinag Tunnelbau Vierzehn,SP,2024-01-01,,True,True
+tourdata_tour_430009271,186989,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009273,186988,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009281,189205,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009281,181174,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430009289,188246,Wanderweg Sperre aufgrund S10 Baustelle,SP,,,True,True
+tourdata_tour_430009307,133895,Bitte beachten sie den Hinweis,IN,,,True,True
+tourdata_tour_430009350,153345,NEUE BESCHILDERUNG,IN,,,True,True
+tourdata_tour_430009351,153344,NEUE BESCHILDERUNG,IN,,,True,True
+tourdata_tour_430009366,188259,Wanderweg Sperre aufgrund S10 Baustelle,TS,,,True,True
+tourdata_tour_430009383,137407,Salzsteig409 Bereich Kruckenbrettl,SP,2022-10-31,,True,True
+tourdata_tour_430009403,188566,Fussgängerbrücke Haus,SP,2026-07-17,2027-04-30,False,True
+tourdata_tour_430009423,138012,Beschilderung,IN,,,True,True
+tourdata_tour_430009426,138014,Beschilderung,IN,,,True,True
+tourdata_tour_430010145,148874,Beschilderung,IN,,,True,True
+tourdata_tour_430010160,186401,Brückensperre und Umleitung Almuferweg im Bereich Redlmühle - Scharnstein/Grünau,IN,2026-04-14,,True,True
+tourdata_tour_430010168,150626,Salzsteig409 Bereich Kruckenbrettl,SP,2022-10-31,,True,True
+tourdata_tour_430010171,150627,Salzsteig409 Bereich Kruckenbrettl,SP,2022-10-31,,True,True
+tourdata_tour_430010191,190979,Sperre Hauergrabensteg,TS,,,True,True
+tourdata_tour_430010191,188879,Wegbelag - Asphalt,IN,,,True,True
+tourdata_tour_430010221,152489,asfinag Tunnelbau Vierzehn,SP,2024-01-01,,True,True
+tourdata_tour_430010225,153256,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010226,153313,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010227,153262,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010228,170863,Baustelle S10,SP,,,True,True
+tourdata_tour_430010228,153270,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010229,153279,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010230,153292,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010231,153298,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010232,153277,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010233,154018,Umleitung S10-Baustelle Rainbach Nord,IN,,,True,True
+tourdata_tour_430010240,153182,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010241,187225,asfinag Tunnelbau Vierzehn,SP,2024-01-01,,True,True
+tourdata_tour_430010241,153207,Bitte beachten Sie die den Hinweis,IN,,,True,True
+tourdata_tour_430010317,186296,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010318,185970,Digital unterwegs auf der Goldwiesen Runde,IN,,,True,True
+tourdata_tour_430010359,181120,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010360,186428,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010361,186424,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010368,186297,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010369,186198,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010373,186225,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010374,186404,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010375,186406,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010376,181119,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010377,181115,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010378,181202,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010378,181270,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010379,186407,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010380,181271,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010381,186416,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010382,186417,Information: Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010383,186419,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010394,186420,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010395,186432,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010396,186433,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010397,181116,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010398,181117,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010399,181118,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010401,181269,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010402,181267,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010403,181203,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010404,181201,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010406,181279,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010407,181277,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010408,181273,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010409,181280,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010410,181281,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010410,181282,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010411,181283,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010412,181286,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010413,181285,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010414,181284,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010416,181199,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010417,181198,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010418,181197,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010419,181200,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010427,189206,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010429,186986,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010431,189207,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010437,186987,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010443,181196,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010444,181195,Tour-Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010445,181288,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010446,181287,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010447,181293,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010448,181289,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010449,181290,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010450,181291,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010451,181292,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010454,181272,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010464,186298,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010465,186226,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010466,186405,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010467,186421,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010468,186423,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010469,186418,Information: Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010470,186408,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010473,186409,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010474,186410,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010475,186411,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010476,186412,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010477,186413,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010478,186414,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010479,186415,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010484,186422,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010486,186425,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010491,180643,Rennradroute - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010492,186426,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010494,186427,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010495,186429,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010496,186431,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010501,186434,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010502,186435,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010503,186436,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010514,181186,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010515,181190,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010516,181191,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010517,181192,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010518,181193,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010519,181194,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010565,185728,Buchsteinrunde Etappe 1 (St. Gallen - Palfau),SP,2025-04-15,,True,True
+tourdata_tour_430010579,185850,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010581,186236,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010582,186237,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010583,186197,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010584,186204,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010585,186205,Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010586,186311,asfinag Tunnelbau Vierzehn,SP,2024-01-01,,True,True
+tourdata_tour_430010586,186242,Information: Tour – Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010628,189896,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010634,190844,Sperre Aussichtsturm Göblberg,SP,,,True,True
+tourdata_tour_430010660,190277,Sperre Forststraße Schrattenbach wegen Forstarbeiten,SP,2026-09-14,2026-11-15,False,True
+tourdata_tour_430010665,189116,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010666,189118,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010667,189119,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010668,189120,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010670,189121,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010671,189132,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010673,189187,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010674,189188,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010675,189189,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010676,189190,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010677,189191,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010678,189192,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010679,189193,Radtour - Digital aufbereitet,IN,,,True,True
+tourdata_tour_430010703,189861,"Teuchl ""Stollenweg""",SP,2023-08-28,,True,True
+tourdata_tour_490000027,153805,Sperre von Mittich/Mattau bis Tennisplatz Neuhaus a.Inn,SP,2025-01-20,2027-06-30,False,True
+tourdata_event_430055541,190578,Ausstellung Franz Kehrer: Komponieren im Raum,IN,,2027-03-31,False,True
+tourdata_event_430184634,129899,Akutmeldung/Information,IN,,,True,True
+tourdata_event_430221461,129922,Akutmeldung/Information,IN,,,True,True
+tourdata_event_430225734,129938,Akutmeldung/Information,IN,,,True,True
+tourdata_event_430229405,129950,Akutmeldung/Information,IN,,,True,True
+tourdata_event_430239724,129963,Akutmeldung/Information,IN,,,True,True
+tourdata_event_430296061,190770,Abgesagt,IN,2026-10-15,2026-11-18,False,True
+tourdata_event_430298165,191090,Veranstaltungsabsage,IN,2026-11-02,2026-11-07,False,True
+tourdata_event_430298253,190210,Nur auf Vorbestellung,IN,2026-11-01,2026-11-30,False,True

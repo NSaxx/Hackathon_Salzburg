@@ -1,4 +1,4 @@
-import { memo, useEffect, useMemo } from "react";
+import { memo, useEffect, useMemo, useState } from "react";
 import {
   CircleMarker,
   MapContainer,
@@ -14,6 +14,14 @@ import L from "leaflet";
 
 import type { MapLocation } from "../../data/locations";
 import { upperAustriaBoundary } from "../../data/upperAustria";
+import {
+  fetchMapPoints,
+  type MapPoint,
+  type MapPoints,
+  type PointDataset,
+} from "../../services/locationApi";
+
+const NO_POINTS: MapPoint[] = [];
 
 const UPPER_AUSTRIA_BOUNDS = L.latLngBounds(upperAustriaBoundary);
 const MAX_BOUNDS = UPPER_AUSTRIA_BOUNDS.pad(0.02);
@@ -125,104 +133,209 @@ const LocationMarker = memo(function LocationMarker({
   );
 });
 
-// Hundreds of monuments are drawn on one shared canvas instead of one DOM node each.
-const monumentRenderer = L.canvas({ tolerance: 6 });
-const MONUMENT_STYLE: L.PathOptions = {
-  color: "#ffffff",
-  weight: 1,
-  fillColor: "#0d9488",
-  fillOpacity: 0.9,
+// The most points drawn at once; the backend spreads them evenly over the view.
+const MAX_VISIBLE_POINTS = 150;
+const RELOAD_DELAY_MS = 150;
+
+const DATASETS: Record<PointDataset, { label: string; color: string }> = {
+  gastronomy: { label: "Gastronomy", color: "#e11d48" },
+  events: { label: "Events", color: "#9333ea" },
+  tours: { label: "Tours", color: "#16a34a" },
+  monuments: { label: "Monuments", color: "#b45309" },
 };
 
-interface MonumentPointsProps {
-  monuments: MapLocation[];
+const pointStyles = Object.fromEntries(
+  Object.entries(DATASETS).map(([dataset, { color }]) => [
+    dataset,
+    { color: "#ffffff", weight: 1, fillColor: color, fillOpacity: 0.9 },
+  ]),
+) as Record<PointDataset, L.PathOptions>;
+
+interface PointLoaderProps {
+  onLoaded: (points: MapPoints) => void;
+  onFailed: (failed: boolean) => void;
+}
+
+function PointLoader({ onLoaded, onFailed }: PointLoaderProps) {
+  const map = useMap();
+
+  useEffect(() => {
+    let controller: AbortController | null = null;
+    let timer: ReturnType<typeof setTimeout>;
+
+    async function load() {
+      controller?.abort();
+      const current = new AbortController();
+      controller = current;
+      const bounds = map.getBounds();
+
+      try {
+        const points = await fetchMapPoints(
+          {
+            south: bounds.getSouth(),
+            west: bounds.getWest(),
+            north: bounds.getNorth(),
+            east: bounds.getEast(),
+          },
+          MAX_VISIBLE_POINTS,
+          current.signal,
+        );
+        onLoaded(points);
+        onFailed(false);
+      } catch (err) {
+        if (current.signal.aborted) return;
+        console.error(err);
+        onFailed(true);
+      }
+    }
+
+    function scheduleLoad() {
+      clearTimeout(timer);
+      timer = setTimeout(load, RELOAD_DELAY_MS);
+    }
+
+    scheduleLoad();
+    map.on("moveend", scheduleLoad);
+
+    return () => {
+      map.off("moveend", scheduleLoad);
+      clearTimeout(timer);
+      controller?.abort();
+    };
+  }, [map, onLoaded, onFailed]);
+
+  return null;
+}
+
+// All points are drawn on one shared canvas instead of one DOM node each.
+const pointRenderer = L.canvas({ tolerance: 6 });
+
+interface PointMarkersProps {
+  points: MapPoint[];
   onLocationClick: (location: MapLocation) => void;
 }
 
-const MonumentPoints = memo(function MonumentPoints({
-  monuments,
+const PointMarkers = memo(function PointMarkers({
+  points,
   onLocationClick,
-}: MonumentPointsProps) {
-  return monuments.map((monument) => (
+}: PointMarkersProps) {
+  return points.map((point) => (
     <CircleMarker
-      key={monument.id}
-      center={[monument.latitude, monument.longitude]}
+      key={point.id}
+      center={[point.latitude, point.longitude]}
       radius={5}
-      renderer={monumentRenderer}
-      pathOptions={MONUMENT_STYLE}
-      eventHandlers={{ click: () => onLocationClick(monument) }}
+      renderer={pointRenderer}
+      pathOptions={pointStyles[point.dataset]}
+      eventHandlers={{ click: () => onLocationClick(point) }}
     >
-      <Tooltip direction="top">{monument.name}</Tooltip>
+      <Tooltip direction="top">{point.name}</Tooltip>
     </CircleMarker>
   ));
 });
 
+function MapLegend({ result, failed }: { result: MapPoints | null; failed: boolean }) {
+  let status = "";
+  if (failed) {
+    status = "Places could not be loaded.";
+  } else if (result && result.shown < result.numberOfItems) {
+    status = `Showing ${result.shown} of ${result.numberOfItems.toLocaleString("en")}. Zoom in for more.`;
+  } else if (result) {
+    status = `${result.numberOfItems.toLocaleString("en")} places in view`;
+  }
+
+  return (
+    <div className="map-legend">
+      <ul>
+        {Object.values(DATASETS).map(({ label, color }) => (
+          <li key={label}>
+            <span className="legend-dot" style={{ background: color }} />
+            {label}
+          </li>
+        ))}
+      </ul>
+      {status && <p role="status">{status}</p>}
+    </div>
+  );
+}
+
 interface Props {
   locations: MapLocation[];
-  monuments: MapLocation[];
   selectedLocation: MapLocation | null;
   onLocationClick: (location: MapLocation) => void;
 }
 
 export default function InteractiveMap({
   locations,
-  monuments,
   selectedLocation,
   onLocationClick,
 }: Props) {
-  const selectedMonument =
+  const [result, setResult] = useState<MapPoints | null>(null);
+  const [failed, setFailed] = useState(false);
+
+  const selectedPoint =
     selectedLocation && !locations.some(({ id }) => id === selectedLocation.id)
       ? selectedLocation
       : null;
 
   return (
-    <MapContainer
-      bounds={UPPER_AUSTRIA_BOUNDS}
-      maxZoom={14}
-      zoomSnap={0.25}
-      maxBounds={MAX_BOUNDS}
-      maxBoundsViscosity={1.0}
-      zoomControl={false}
-      style={{
-        height: "100%",
-        width: "100%",
-      }}
-    >
-      <MapResizeHandler />
-      <FlyToSelected location={selectedLocation} />
-      <ZoomControl position="bottomleft" />
-      <TileLayer
-        attribution="&copy; OpenStreetMap contributors"
-        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+    <>
+      <MapContainer
+        bounds={UPPER_AUSTRIA_BOUNDS}
         maxZoom={14}
-        keepBuffer={4}
-      />
+        zoomSnap={0.25}
+        maxBounds={MAX_BOUNDS}
+        maxBoundsViscosity={1.0}
+        zoomControl={false}
+        style={{
+          height: "100%",
+          width: "100%",
+        }}
+      >
+        <MapResizeHandler />
+        <FlyToSelected location={selectedLocation} />
+        <ZoomControl position="bottomleft" />
+        <TileLayer
+          attribution="&copy; OpenStreetMap contributors"
+          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+          maxZoom={14}
+          keepBuffer={4}
+        />
 
-      <Polygon positions={OUTSIDE_MASK} pathOptions={MASK_STYLE} interactive={false} />
-      <Polygon
-        positions={upperAustriaBoundary}
-        pathOptions={BORDER_STYLE}
-        interactive={false}
-      />
+        <Polygon
+          positions={OUTSIDE_MASK}
+          pathOptions={MASK_STYLE}
+          interactive={false}
+        />
+        <Polygon
+          positions={upperAustriaBoundary}
+          pathOptions={BORDER_STYLE}
+          interactive={false}
+        />
 
-      <MonumentPoints monuments={monuments} onLocationClick={onLocationClick} />
-
-      {locations.map((location) => (
-        <LocationMarker
-          key={location.id}
-          location={location}
-          selected={location.id === selectedLocation?.id}
+        <PointLoader onLoaded={setResult} onFailed={setFailed} />
+        <PointMarkers
+          points={result?.points ?? NO_POINTS}
           onLocationClick={onLocationClick}
         />
-      ))}
 
-      {selectedMonument && (
-        <LocationMarker
-          location={selectedMonument}
-          selected
-          onLocationClick={onLocationClick}
-        />
-      )}
-    </MapContainer>
+        {locations.map((location) => (
+          <LocationMarker
+            key={location.id}
+            location={location}
+            selected={location.id === selectedLocation?.id}
+            onLocationClick={onLocationClick}
+          />
+        ))}
+
+        {selectedPoint && (
+          <LocationMarker
+            location={selectedPoint}
+            selected
+            onLocationClick={onLocationClick}
+          />
+        )}
+      </MapContainer>
+      <MapLegend result={result} failed={failed} />
+    </>
   );
 }
