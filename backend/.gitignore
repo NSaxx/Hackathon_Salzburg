@@ -4,4 +4,4 @@ env/
 .cache.sqlite
 
 # directory containing data sets
-data/
+/dataset/

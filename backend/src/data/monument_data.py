@@ -5,7 +5,7 @@ import re
 
 
 # https://www.bda.gv.at/service/unterschutzstellung/denkmalverzeichnis/denkmalliste-gemaess-3-dmsg.html
-DATASET_DIR = Path(__file__).resolve().parents[2] / "datasets"
+DATASET_DIR = Path(__file__).resolve().parents[2] / "dataset"
 DEFAULT_INPUT = DATASET_DIR / "upperaustria_denkmal_list.csv"
 DEFAULT_OUTPUT = DATASET_DIR / "upperaustria_denkmal_touristic.csv"
 
