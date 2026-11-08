@@ -1,4 +1,4 @@
-# WIP Hackathon Project
+# WIP Hackathon Project - Der AI Concierge von Oberösterreich (Atriensis Danubii)
 
 ## Architecture
 
