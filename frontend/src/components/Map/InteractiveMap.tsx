@@ -1,10 +1,12 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { memo, useEffect, useMemo } from "react";
+import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 
 import L from "leaflet";
+import iconUrl from "leaflet/dist/images/marker-icon.png";
+import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
+import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 
 import type { MapLocation } from "../../data/locations";
-import { useEffect } from "react";
-import { useMap } from "react-leaflet";
 
 function MapResizeHandler() {
   const map = useMap();
@@ -25,31 +27,72 @@ function MapResizeHandler() {
   return null;
 }
 
-interface Props {
-  locations: MapLocation[];
-  selectedLocation: string | null;
+// Icons are bundled by Vite instead of fetched from unpkg on every page load.
+const iconOptions: L.IconOptions = {
+  iconUrl,
+  iconRetinaUrl,
+  shadowUrl,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+};
+
+const defaultIcon = new L.Icon(iconOptions);
+const selectedIcon = new L.Icon({ ...iconOptions, className: "marker-selected" });
+
+const MAP_CENTER: L.LatLngExpression = [48.2, 13.9];
+const MAX_BOUNDS: L.LatLngBoundsExpression = [
+  [47.4, 12.6], // Southwest
+  [48.9, 14.9], // Northeast
+];
+
+interface LocationMarkerProps {
+  location: MapLocation;
+  selected: boolean;
   onLocationClick: (location: MapLocation) => void;
 }
 
-const defaultIcon = new L.Icon({
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  iconRetinaUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
+// Memoised so a state change in App (loading, data, ...) doesn't re-render every marker.
+const LocationMarker = memo(function LocationMarker({
+  location,
+  selected,
+  onLocationClick,
+}: LocationMarkerProps) {
+  const eventHandlers = useMemo(
+    () => ({ click: () => onLocationClick(location) }),
+    [location, onLocationClick],
+  );
+
+  return (
+    <Marker
+      position={[location.latitude, location.longitude]}
+      icon={selected ? selectedIcon : defaultIcon}
+      eventHandlers={eventHandlers}
+    >
+      <Popup>{location.name}</Popup>
+    </Marker>
+  );
 });
 
-export default function InteractiveMap({ locations, onLocationClick }: Props) {
+interface Props {
+  locations: MapLocation[];
+  selectedLocationId: string | null;
+  onLocationClick: (location: MapLocation) => void;
+}
+
+export default function InteractiveMap({
+  locations,
+  selectedLocationId,
+  onLocationClick,
+}: Props) {
   return (
     <MapContainer
-      center={[48.2, 13.9]}
+      center={MAP_CENTER}
       zoom={8}
       minZoom={8}
       maxZoom={14}
-      maxBounds={[
-        [47.4, 12.6], // Southwest
-        [48.9, 14.9], // Northeast
-      ]}
+      maxBounds={MAX_BOUNDS}
       maxBoundsViscosity={1.0}
       style={{
         height: "100%",
@@ -59,20 +102,18 @@ export default function InteractiveMap({ locations, onLocationClick }: Props) {
       <MapResizeHandler />
       <TileLayer
         attribution="&copy; OpenStreetMap contributors"
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        maxZoom={14}
+        keepBuffer={4}
       />
 
       {locations.map((location) => (
-        <Marker
+        <LocationMarker
           key={location.id}
-          position={[location.latitude, location.longitude]}
-          icon={defaultIcon}
-          eventHandlers={{
-            click: () => onLocationClick(location),
-          }}
-        >
-          <Popup>{location.name}</Popup>
-        </Marker>
+          location={location}
+          selected={location.id === selectedLocationId}
+          onLocationClick={onLocationClick}
+        />
       ))}
     </MapContainer>
   );

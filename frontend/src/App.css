@@ -4,3 +4,27 @@
 .app h2 {
   margin-top: 0;
 }
+
+.muted {
+  color: #64748b;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+.data-list dt {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.data-list dd {
+  margin: 0 0 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Highlight the selected marker without a second image asset */
+.marker-selected {
+  filter: hue-rotate(150deg) saturate(1.6);
+}
