@@ -33,7 +33,7 @@ def fmt_time_intervals(intervals: object) -> str:
 
 def gastronomy() -> pd.DataFrame:
     gastro_raw: pd.DataFrame = read_json_to_dataframe(
-        "data/Gastronomy (Gastro.json).json"
+        "dataset/Gastronomy (Gastro.json).json"
     )
     gastro_raw["timeIntervals"] = gastro_raw["timeIntervals"].apply(fmt_time_intervals)
     gastro_clean: pd.DataFrame = gastro_raw[
@@ -56,7 +56,7 @@ def gastronomy() -> pd.DataFrame:
 
 def events() -> pd.DataFrame:
     events_raw: pd.DataFrame = read_json_to_dataframe(
-        "data/Events (Veranstaltung.json).json"
+        "dataset/Events (Veranstaltung.json).json"
     )
     events_raw["timeIntervals"] = events_raw["timeIntervals"].apply(fmt_time_intervals)
     events_clean: pd.DataFrame = events_raw[
