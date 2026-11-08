@@ -88,3 +88,37 @@ def data(
     }
 
     return pd.DataFrame(data=hourly_data)
+
+
+def _number(value: float) -> float | None:
+    return None if pd.isna(value) else round(float(value), 1)
+
+
+def summary(hourly: pd.DataFrame) -> dict[str, object]:
+    """Reduce the hourly data to the conditions right now and one entry per day."""
+    now = pd.Timestamp.now(tz=hourly["date"].dt.tz)
+    current = hourly[hourly["date"] <= now].iloc[-1]
+
+    days = [
+        {
+            "date": date.isoformat(),
+            "temperature_min": _number(day["temperature_min"].min()),
+            "temperature_max": _number(day["temperature_max"].max()),
+            # Like Open-Meteo's daily value: the most severe weather of the day.
+            "weather_code": _number(day["weather_code"].max()),
+            "precipitation_probability": _number(day["precipitation_probability"].max()),
+        }
+        for date, day in hourly.groupby(hourly["date"].dt.date)
+    ]
+
+    return {
+        "current": {
+            "time": current["date"].isoformat(),
+            "temperature": _number(current["temperature"]),
+            "weather_code": _number(current["weather_code"]),
+            "is_day": bool(current["is_day"]),
+            "wind_speed": _number(current["wind_speed"]),
+            "precipitation_probability": _number(current["precipitation_probability"]),
+        },
+        "days": days,
+    }

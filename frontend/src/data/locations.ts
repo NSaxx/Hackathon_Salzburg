@@ -3,6 +3,10 @@ export interface MapLocation {
   name: string;
   latitude: number;
   longitude: number;
+  category?: string;
+  address?: string;
+  // True when the position is only known to village or municipality level.
+  approximate?: boolean;
 }
 
 export const locations: MapLocation[] = [
