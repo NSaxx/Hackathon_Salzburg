@@ -1,5 +1,7 @@
 import sys
 
+from typing import Any
+
 import pandas as pd
 import json
 
@@ -20,8 +22,48 @@ def points_of_interest() -> pd.DataFrame:
     return read_json_to_dataframe("data/Points of interest (Poi.json, gzip)")
 
 
+def fmt_interval(i: dict[str, Any]) -> str:
+    days = ", ".join(d[:3] for d in i["weekdays"])
+    start = i["start"][11:16]
+    end = i["end"][11:16]
+    return f"{days} {start}-{end}"
+
+
+def fmt_time_intervals(intervals: object) -> str:
+    if not isinstance(intervals, list):
+        return ""
+    return "; ".join(fmt_interval(i) for i in intervals)
+
+
 def gastronomy() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Gastronomy (Gastro.json).json")
+    gastro_raw: pd.DataFrame = read_json_to_dataframe(
+        "data/Gastronomy (Gastro.json).json"
+    )
+    gastro_raw["timeIntervals"] = gastro_raw["timeIntervals"].apply(fmt_time_intervals)
+    gastro_clean: pd.DataFrame = gastro_raw[
+        [
+            "title",
+            "categories",
+            "street",
+            "city",
+            "zip",
+            "geo_main_latitude",
+            "geo_main_longitude",
+            "email",
+            "phone",
+            "web",
+            "timeIntervals",
+        ]
+    ]
+    return gastro_clean
+
+
+def landesmuseen() -> pd.DataFrame:
+    return pd.read_csv(
+        "https://e-gov.ooe.gv.at/at.gv.ooe.ogd2-citi/api/file/eb1MKuyzLjiztYufybYPnQ/Standorte_der_Oberoesterreichischen_Landesmuseen.csv",
+        encoding="latin-1",
+        sep=";",
+    ).drop(columns=["Staats-ID"])
 
 
 def accomodation() -> pd.DataFrame:
