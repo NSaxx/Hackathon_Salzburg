@@ -1,55 +1,60 @@
+from pathlib import Path
+
 import pandas as pd
 import re
 
 
 # https://www.bda.gv.at/service/unterschutzstellung/denkmalverzeichnis/denkmalliste-gemaess-3-dmsg.html
-D = ("datasets/upperaustria_denkmal_list.csv")
-
-denkmal = pd.read_csv(D, sep=";")
+DATASET_DIR = Path(__file__).resolve().parents[2] / "datasets"
+DEFAULT_INPUT = DATASET_DIR / "upperaustria_denkmal_list.csv"
+DEFAULT_OUTPUT = DATASET_DIR / "upperaustria_denkmal_touristic.csv"
 
 # Keyword filter: keep monuments a visitor would actually go and see.
 # Categories are checked in order, the first match wins.
+
 CATEGORIES = {
-    "museum_memorial": (
-        r"(?<!ehem\. )museum|gedenkstätte|memorial|besucherzentrum"
-        r"|konzentrationslager|kz-|geburtshaus|sterbehaus"
-    ),
-    "abbey": (
-        r"\bstift\b|stiftskirche|stiftspfarrkirche|kloster|abtei"
-        r"|basilika|\bdom\b|domkirche"
-    ),
-    "castle": (
-        r"schloss|schloß|schlössl|\bburg\b|burgruine|herzogsburg"
-        r"|\bruine|festung|palais|residenz|\bansitz"
-    ),
-    "archaeology": (
-        r"römer|römisch|lauriacum|legionslager|kastell|vicus|fundzone"
-        r"|gräberfeld|hügelgr|ringwall|pfahlbau|höhensiedlung"
-        r"|burgstall|hallstattkultur|felszeichnung|befunde"
-    ),
-    "pilgrimage": (r"wallfahrt"),
-    "fortification": (
-        r"stadtmauer|marktmauer|befestigung|stadttor|\btor\b|torturm"
-        r"|torbau|bastion|zwinger|wehrturm|\bturm\b|stadtturm|\bfort\b"
-    ),
-    "landmark": (
-        r"rathaus|pranger|mariensäule|pestsäule|dreifaltigkeitssäule"
-        r"|marktbrunnen|stadtbrunnen|(?<!krieger)denkmal|lichtsäule"
-        r"|totenleuchte"
-    ),
-    "technical": (
-        r"soleleitung|hammer|sensenwerk|pferdeeisenbahn|seilbahn"
-        r"|lokalbahn|pöstlingbergbahn|klause|glockengießerei"
-        r"|salzstadel|salzturm|innerberger stadel|stollen"
-    ),
-    "culture_venue": (
-        r"theater|brucknerhaus|kurhaus|trinkhalle|kaiservilla"
-        r"|musikpavillon|botanischer garten|lehár|stadthalle"
-    ),
-}
+        "museum_memorial": (
+            r"(?<!ehem\. )museum|gedenkstätte|memorial|besucherzentrum"
+            r"|konzentrationslager|kz-|geburtshaus|sterbehaus"
+        ),
+        "abbey": (
+            r"\bstift\b|stiftskirche|stiftspfarrkirche|kloster|abtei"
+            r"|basilika|\bdom\b|domkirche"
+        ),
+        "castle": (
+            r"schloss|schloß|schlössl|\bburg\b|burgruine|herzogsburg"
+            r"|\bruine|festung|palais|residenz|\bansitz"
+        ),
+        "archaeology": (
+            r"römer|römisch|lauriacum|legionslager|kastell|vicus|fundzone"
+            r"|gräberfeld|hügelgr|ringwall|pfahlbau|höhensiedlung"
+            r"|burgstall|hallstattkultur|felszeichnung|befunde"
+        ),
+        "pilgrimage": (r"wallfahrt"),
+        "fortification": (
+            r"stadtmauer|marktmauer|befestigung|stadttor|\btor\b|torturm"
+            r"|torbau|bastion|zwinger|wehrturm|\bturm\b|stadtturm|\bfort\b"
+        ),
+        "landmark": (
+            r"rathaus|pranger|mariensäule|pestsäule|dreifaltigkeitssäule"
+            r"|marktbrunnen|stadtbrunnen|(?<!krieger)denkmal|lichtsäule"
+            r"|totenleuchte"
+        ),
+        "technical": (
+            r"soleleitung|hammer|sensenwerk|pferdeeisenbahn|seilbahn"
+            r"|lokalbahn|pöstlingbergbahn|klause|glockengießerei"
+            r"|salzstadel|salzturm|innerberger stadel|stollen"
+        ),
+        "culture_venue": (
+            r"theater|brucknerhaus|kurhaus|trinkhalle|kaiservilla"
+            r"|musikpavillon|botanischer garten|lehár|stadthalle"
+        ),
+    }
+
 
 # If the main (first) part of the title is an everyday building, drop it,
 # even when a later part says e.g. "ehem. Schloss" or "Teil der Stadtmauer".
+
 EXCLUDE_LEAD = (
     r"^(ehem\.\s+|alte[rs]?\s+)?(bürger|wohn|miet|doppelwohn"
     r"|arbeiter|kommunal|ackerbürger|pfarrhof|pfarrheim|pfarrhaus"
@@ -71,11 +76,18 @@ EXCLUDE_LEAD = (
 # Always keep these, whatever the first part of the title says
 # (e.g. "Wohnhaus, Bruckner-Geburtshaus", "Troadkasten, Heimatmuseum",
 # "Kath. Pfarrkirche, Wallfahrtskirche ...").
+
 ALWAYS_KEEP = (
     r"(?<!ehem\. )museum|gedenkstätte|memorial|konzentrationslager"
     r"|kz-|geburtshaus|wallfahrt|basilika|\bdom\b|stiftskirche"
     r"|stiftspfarrkirche|klosterkirche|klosterbauten"
 )
+
+# Street names and unrelated compounds that contain a category keyword
+# (e.g. "Römerstraße 2", "Schlossgärtnerei", "Klosterneuburg"); removed
+# before the category keywords are matched.
+
+NOISE = r"\w*(?:gasse|straße|strasse|weg|platz|allee)\b(?:\s+\d+)?|schlossgärtnerei|klosterneuburg"
 
 
 def classify(title: object) -> str | None:
@@ -83,39 +95,20 @@ def classify(title: object) -> str | None:
     lead = t.split(",")[0].strip()
     if not re.search(ALWAYS_KEEP, t) and re.search(EXCLUDE_LEAD, lead):
         return None
+    t = re.sub(NOISE, " ", t)
     for category, pattern in CATEGORIES.items():
         if re.search(pattern, t):
             return category
     return None
 
+def filter_csv(filepath: str | Path = DEFAULT_INPUT) -> pd.DataFrame:
+    denkmal = pd.read_csv(filepath, sep=";")
+
+    denkmal["category"] = denkmal["Objekttitel"].map(classify)
+    touristic = denkmal[denkmal["category"].notna()].copy()
+
+    return touristic
 
 
-denkmal["category"] = denkmal["Objekttitel"].map(classify)
-touristic = denkmal[denkmal["category"].notna()].copy()
-
-# Clean addresses for geocoding: drop the "#MIG-x#" markers and the position hints like 
-# "(bei)", "(vor)", "(gegenüber)".
-#
-#POSITION_HINT = r"\s*\((bei|vor|gegenüber|hinter|neben|in der nähe)\)"
-#
-#touristic["address_clean"] = (
-#    touristic["Adresse"]
-#    .str.replace(r"\s*#MIG-\w+#", "", regex=True)
-#    .str.replace(POSITION_HINT, "", regex=True, flags=re.IGNORECASE)
-#    .str.replace(r"\s+,", ",", regex=True)
-#    .str.strip()
-# )
-#
-#touristic = touristic.dropna(subset=["Adresse"])
-#print(len(touristic), "of", len(denkmal), "monuments kept")
-#print(touristic["category"].value_counts())
-#
-#touristic[["HERIS-ID", "Gemeinde", "Objekttitel", "category", "Adresse"]].to_csv(
-#    "datasets/upperaustria_denkmal_touristic.csv",
-#    sep=";",
-#    index=False,
-#)
-
-touristic.to_csv("filtered_touristic.csv", sep=";")
-
-
+def get_filtered_csv(df: pd.DataFrame, filepath: str | Path = DEFAULT_OUTPUT) -> None:
+    df.to_csv(filepath, sep=";", index=False)
