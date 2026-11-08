@@ -1,30 +1,497 @@
 /* Keep application-specific styles here.
    Global layout is defined in index.css. */
 
-.app h2 {
-  margin-top: 0;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
-.muted {
-  color: #64748b;
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--accent), #14b8a6);
 }
 
-.error {
-  color: #b91c1c;
+.brand h1 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
 }
 
-.data-list dt {
+.brand p {
+  margin: 2px 0 0;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    color 150ms;
+}
+
+.chip:hover {
+  background: var(--surface-muted);
+}
+
+.chip[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.chip:focus-visible,
+.retry:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.brand,
+.eyebrow,
+.chips,
+.monument-count {
+  flex-shrink: 0;
+}
+
+.monument-count {
+  margin: -12px 0 16px;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.meta {
+  margin: -8px 0 16px;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.data-list dd {
+/* Details stay compact and scroll on their own so the chat keeps the remaining height. */
+.details {
+  flex: 0 1 auto;
+  min-height: 0;
+  max-height: 40%;
+  margin-bottom: 16px;
+  overflow-y: auto;
+}
+
+.details h2 {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.empty {
+  margin: 0;
+  padding: 16px 20px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.error-card {
+  padding: 16px;
+  border-radius: var(--radius-md);
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 0.9375rem;
+}
+
+.error-card p {
   margin: 0 0 12px;
+}
+
+.retry {
+  padding: 6px 12px;
+  border: 1px solid currentcolor;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.weather {
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: var(--surface-muted);
+}
+
+.weather-now {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.weather-temperature {
+  font-size: 1.75rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.weather-summary {
+  display: grid;
+  margin-left: 4px;
+  font-size: 0.8125rem;
+}
+
+.weather-summary span {
+  color: var(--text-muted);
+}
+
+.weather-days {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+  margin: 12px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
+}
+
+.weather-days li {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  font-size: 0.8125rem;
+}
+
+.weather-low {
+  color: var(--text-muted);
+}
+
+.skeleton {
+  display: grid;
+  gap: 8px;
+}
+
+.skeleton span {
+  height: 62px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(
+    90deg,
+    var(--surface-muted) 25%,
+    var(--border) 50%,
+    var(--surface-muted) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* Chat */
+
+.chat {
+  display: flex;
+  flex: 1 1 260px;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 260px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.chat-log {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.chat-hint {
+  margin: auto 0;
+  padding: 0 16px;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.bubble {
+  max-width: 85%;
+  margin: 0;
+  padding: 9px 13px;
+  border-radius: 16px;
+  font-size: 0.9375rem;
+  line-height: 1.4;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
-/* Highlight the selected marker without a second image asset */
-.marker-selected {
-  filter: hue-rotate(150deg) saturate(1.6);
+.bubble--user {
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.bubble--assistant {
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  background: var(--surface-muted);
+}
+
+.typing {
+  display: flex;
+  gap: 4px;
+  padding: 13px;
+}
+
+.typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  animation: typing 1.2s ease-in-out infinite;
+}
+
+.typing span:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.typing span:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+@keyframes typing {
+  0%,
+  60%,
+  100% {
+    opacity: 0.35;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.chat-form {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-muted);
+}
+
+.chat-form:focus-within {
+  border-color: var(--accent);
+}
+
+.chat-form textarea {
+  flex: 1;
+  min-width: 0;
+  max-height: 120px;
+  padding: 7px 8px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9375rem;
+  field-sizing: content;
+}
+
+.chat-form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.chat-form button {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--on-accent);
+  cursor: pointer;
+}
+
+.chat-form button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.chat-form button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* The panel is short on phones: drop the hint and let selected details push the chat down. */
+@media (max-width: 720px) {
+  .details {
+    flex-shrink: 0;
+  }
+
+  .details:has(.empty) {
+    display: none;
+  }
+
+  .chat {
+    min-height: 200px;
+  }
+}
+
+/* Map */
+
+.map-mask {
+  fill: var(--map-mask);
+}
+
+.map-pin span {
+  position: absolute;
+  inset: 6px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: #2563eb;
+  box-shadow: 0 2px 6px rgb(16 24 40 / 40%);
+  transition: inset 150ms;
+}
+
+.map-pin:hover span {
+  inset: 4px;
+}
+
+.map-pin--selected span {
+  inset: 3px;
+  background: #f97316;
+}
+
+.map-pin--selected::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #f97316;
+  animation: pulse 1.8s ease-out infinite;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.leaflet-container .leaflet-tooltip {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  box-shadow: var(--shadow);
+}
+
+.leaflet-container .leaflet-tooltip-top::before {
+  display: none;
+}
+
+.leaflet-container .leaflet-bar {
+  overflow: hidden;
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.leaflet-container .leaflet-bar a {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.leaflet-container .leaflet-bar a:hover {
+  background: var(--surface-muted);
+}
+
+.leaflet-container .leaflet-control-attribution {
+  border-top-left-radius: 8px;
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.leaflet-container .leaflet-control-attribution a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton span,
+  .typing span,
+  .map-pin--selected::before {
+    animation: none;
+  }
 }

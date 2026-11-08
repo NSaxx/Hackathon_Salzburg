@@ -1,12 +1,47 @@
 import { memo, useEffect, useMemo } from "react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import {
+  CircleMarker,
+  MapContainer,
+  Marker,
+  Polygon,
+  TileLayer,
+  Tooltip,
+  useMap,
+  ZoomControl,
+} from "react-leaflet";
 
 import L from "leaflet";
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
-import shadowUrl from "leaflet/dist/images/marker-shadow.png";
 
 import type { MapLocation } from "../../data/locations";
+import { upperAustriaBoundary } from "../../data/upperAustria";
+
+const UPPER_AUSTRIA_BOUNDS = L.latLngBounds(upperAustriaBoundary);
+const MAX_BOUNDS = UPPER_AUSTRIA_BOUNDS.pad(0.02);
+
+// Everything outside Upper Austria is covered by a rectangle with the state cut out as a hole.
+const OUTSIDE_MASK: L.LatLngExpression[][] = [
+  [
+    [40, 5],
+    [40, 22],
+    [56, 22],
+    [56, 5],
+  ],
+  upperAustriaBoundary,
+];
+
+// The fill colour comes from the theme, see .map-mask in App.css.
+const MASK_STYLE: L.PathOptions = {
+  className: "map-mask",
+  stroke: false,
+  fillOpacity: 1,
+};
+const BORDER_STYLE: L.PathOptions = {
+  color: "#2563eb",
+  weight: 2,
+  fill: false,
+};
+
+const SELECTED_MIN_ZOOM = 10;
 
 function MapResizeHandler() {
   const map = useMap();
@@ -17,6 +52,8 @@ function MapResizeHandler() {
         pan: false,
         animate: false,
       });
+      // Don't allow zooming out further than needed to show the whole state.
+      map.setMinZoom(map.getBoundsZoom(MAX_BOUNDS));
     });
 
     observer.observe(map.getContainer());
@@ -27,25 +64,37 @@ function MapResizeHandler() {
   return null;
 }
 
-// Icons are bundled by Vite instead of fetched from unpkg on every page load.
-const iconOptions: L.IconOptions = {
-  iconUrl,
-  iconRetinaUrl,
-  shadowUrl,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41],
+function FlyToSelected({ location }: { location: MapLocation | null }) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (!location) return;
+
+    const target: L.LatLngTuple = [location.latitude, location.longitude];
+    const zoom = Math.max(map.getZoom(), SELECTED_MIN_ZOOM);
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      map.setView(target, zoom, { animate: false });
+    } else {
+      map.flyTo(target, zoom, { duration: 0.8 });
+    }
+  }, [map, location]);
+
+  return null;
+}
+
+const pinOptions: L.DivIconOptions = {
+  html: "<span></span>",
+  iconSize: [28, 28],
+  iconAnchor: [14, 14],
+  tooltipAnchor: [0, -14],
 };
 
-const defaultIcon = new L.Icon(iconOptions);
-const selectedIcon = new L.Icon({ ...iconOptions, className: "marker-selected" });
-
-const MAP_CENTER: L.LatLngExpression = [48.2, 13.9];
-const MAX_BOUNDS: L.LatLngBoundsExpression = [
-  [47.4, 12.6], // Southwest
-  [48.9, 14.9], // Northeast
-];
+const defaultIcon = L.divIcon({ ...pinOptions, className: "map-pin" });
+const selectedIcon = L.divIcon({
+  ...pinOptions,
+  className: "map-pin map-pin--selected",
+});
 
 interface LocationMarkerProps {
   location: MapLocation;
@@ -68,38 +117,80 @@ const LocationMarker = memo(function LocationMarker({
     <Marker
       position={[location.latitude, location.longitude]}
       icon={selected ? selectedIcon : defaultIcon}
+      alt={location.name}
       eventHandlers={eventHandlers}
     >
-      <Popup>{location.name}</Popup>
+      <Tooltip direction="top">{location.name}</Tooltip>
     </Marker>
   );
 });
 
+// Hundreds of monuments are drawn on one shared canvas instead of one DOM node each.
+const monumentRenderer = L.canvas({ tolerance: 6 });
+const MONUMENT_STYLE: L.PathOptions = {
+  color: "#ffffff",
+  weight: 1,
+  fillColor: "#0d9488",
+  fillOpacity: 0.9,
+};
+
+interface MonumentPointsProps {
+  monuments: MapLocation[];
+  onLocationClick: (location: MapLocation) => void;
+}
+
+const MonumentPoints = memo(function MonumentPoints({
+  monuments,
+  onLocationClick,
+}: MonumentPointsProps) {
+  return monuments.map((monument) => (
+    <CircleMarker
+      key={monument.id}
+      center={[monument.latitude, monument.longitude]}
+      radius={5}
+      renderer={monumentRenderer}
+      pathOptions={MONUMENT_STYLE}
+      eventHandlers={{ click: () => onLocationClick(monument) }}
+    >
+      <Tooltip direction="top">{monument.name}</Tooltip>
+    </CircleMarker>
+  ));
+});
+
 interface Props {
   locations: MapLocation[];
-  selectedLocationId: string | null;
+  monuments: MapLocation[];
+  selectedLocation: MapLocation | null;
   onLocationClick: (location: MapLocation) => void;
 }
 
 export default function InteractiveMap({
   locations,
-  selectedLocationId,
+  monuments,
+  selectedLocation,
   onLocationClick,
 }: Props) {
+  const selectedMonument =
+    selectedLocation && !locations.some(({ id }) => id === selectedLocation.id)
+      ? selectedLocation
+      : null;
+
   return (
     <MapContainer
-      center={MAP_CENTER}
-      zoom={8}
-      minZoom={8}
+      bounds={UPPER_AUSTRIA_BOUNDS}
       maxZoom={14}
+      zoomSnap={0.25}
       maxBounds={MAX_BOUNDS}
       maxBoundsViscosity={1.0}
+      zoomControl={false}
       style={{
         height: "100%",
         width: "100%",
       }}
     >
       <MapResizeHandler />
+      <FlyToSelected location={selectedLocation} />
+      <ZoomControl position="bottomleft" />
       <TileLayer
         attribution="&copy; OpenStreetMap contributors"
         url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -107,14 +198,31 @@ export default function InteractiveMap({
         keepBuffer={4}
       />
 
+      <Polygon positions={OUTSIDE_MASK} pathOptions={MASK_STYLE} interactive={false} />
+      <Polygon
+        positions={upperAustriaBoundary}
+        pathOptions={BORDER_STYLE}
+        interactive={false}
+      />
+
+      <MonumentPoints monuments={monuments} onLocationClick={onLocationClick} />
+
       {locations.map((location) => (
         <LocationMarker
           key={location.id}
           location={location}
-          selected={location.id === selectedLocationId}
+          selected={location.id === selectedLocation?.id}
           onLocationClick={onLocationClick}
         />
       ))}
+
+      {selectedMonument && (
+        <LocationMarker
+          location={selectedMonument}
+          selected
+          onLocationClick={onLocationClick}
+        />
+      )}
     </MapContainer>
   );
 }

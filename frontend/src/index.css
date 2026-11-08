@@ -1,3 +1,57 @@
+:root {
+  color-scheme: light dark;
+
+  --bg: #eef1f6;
+  --surface: #ffffff;
+  --surface-muted: #f4f6fa;
+  --border: #e3e8f0;
+  --text: #101828;
+  --text-muted: #667085;
+  --accent: #2563eb;
+  --accent-soft: #e4ecfe;
+  --on-accent: #ffffff;
+  --danger: #c0271d;
+  --danger-soft: #fdecea;
+  --map-mask: #e6eaf1;
+  --shadow: 0 1px 2px rgb(16 24 40 / 6%), 0 8px 24px rgb(16 24 40 / 8%);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0f17;
+    --surface: #151b26;
+    --surface-muted: #1d2431;
+    --border: #2a3342;
+    --text: #eef1f6;
+    --text-muted: #98a2b3;
+    --accent: #6d9bff;
+    --accent-soft: #1e2d4d;
+    --on-accent: #0b0f17;
+    --danger: #ff8a80;
+    --danger-soft: #3a1d1b;
+    --map-mask: #0f141d;
+    --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 8px 24px rgb(0 0 0 / 35%);
+  }
+
+  /* OSM only ships light tiles, so derive a dark map from them */
+  .leaflet-tile-pane {
+    filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,12 +67,15 @@ body,
 
 body {
   overflow: hidden;
+  background: var(--bg);
 }
 
 .app {
   display: flex;
+  gap: 12px;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
+  padding: 12px;
   overflow: hidden;
 }
 
@@ -29,16 +86,39 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
 }
 
 .info-panel {
-  width: 350px;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
   height: 100%;
   flex-shrink: 0;
   padding: 24px;
-  background: #f8fafc;
-  border-left: 1px solid #e2e8f0;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
   overflow-y: auto;
+}
+
+@media (max-width: 720px) {
+  .app {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .map-container {
+    height: auto;
+  }
+
+  .info-panel {
+    width: 100%;
+    height: 55dvh;
+    padding: 20px;
+  }
 }
 
 /* Leaflet must control its own map dimensions */
@@ -47,6 +127,8 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
+  background: var(--map-mask);
+  font-family: inherit;
 }
 
 /* Prevent global CSS resets from resizing map tiles */
