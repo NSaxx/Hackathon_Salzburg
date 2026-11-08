@@ -18,10 +18,6 @@ def read_json_to_dataframe(filepath: str) -> pd.DataFrame:
         sys.exit(1)
 
 
-def points_of_interest() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Points of interest (Poi.json, gzip)")
-
-
 def fmt_interval(i: dict[str, Any]) -> str:
     days = ", ".join(d[:3] for d in i["weekdays"])
     start = i["start"][11:16]
@@ -58,18 +54,6 @@ def gastronomy() -> pd.DataFrame:
     return gastro_clean
 
 
-def landesmuseen() -> pd.DataFrame:
-    return pd.read_csv(
-        "https://e-gov.ooe.gv.at/at.gv.ooe.ogd2-citi/api/file/eb1MKuyzLjiztYufybYPnQ/Standorte_der_Oberoesterreichischen_Landesmuseen.csv",
-        encoding="latin-1",
-        sep=";",
-    ).drop(columns=["Staats-ID"])
-
-
-def accomodation() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Accommodation (Vermieter.json).json")
-
-
 def events() -> pd.DataFrame:
     events_raw: pd.DataFrame = read_json_to_dataframe(
         "data/Events (Veranstaltung.json).json"
@@ -93,21 +77,3 @@ def events() -> pd.DataFrame:
     ]
 
     return events_clean
-
-
-def tours() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Tours (Tour.json, gzip)")
-
-
-def packages_and_offers() -> pd.DataFrame:
-    return read_json_to_dataframe(
-        "data/Packages and offers (GlobalePauschale.json).json"
-    )
-
-
-def places() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Places (OrteInformation.json).json")
-
-
-def tourism_areas() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Tourism areas (Gebiet.json).json")
