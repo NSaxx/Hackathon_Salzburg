@@ -71,7 +71,28 @@ def accomodation() -> pd.DataFrame:
 
 
 def events() -> pd.DataFrame:
-    return read_json_to_dataframe("data/Events (Veranstaltung.json).json")
+    events_raw: pd.DataFrame = read_json_to_dataframe(
+        "data/Events (Veranstaltung.json).json"
+    )
+    events_raw["timeIntervals"] = events_raw["timeIntervals"].apply(fmt_time_intervals)
+    events_clean: pd.DataFrame = events_raw[
+        [
+            "name",
+            "title",
+            "categories",
+            "street",
+            "city",
+            "zip",
+            "geo_main_latitude",
+            "geo_main_longitude",
+            "email",
+            "phone",
+            "web",
+            "timeIntervals",
+        ]
+    ]
+
+    return events_clean
 
 
 def tours() -> pd.DataFrame:
